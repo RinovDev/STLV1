@@ -1,0 +1,11 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "ua"
+  },
+  "sections": {
+  },
+  "order": [
+    "multicolumn"
+  ]
+}
