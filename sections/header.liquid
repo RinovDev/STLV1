@@ -180,7 +180,7 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ block.settings.text_logo }}</span>
+              <span class="h2">{{ section.settings.logo_title }}</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -220,7 +220,7 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
+              <span class="h2">{{}}</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -465,12 +465,19 @@
 {%- endif -%}
 
 {% schema %}
+
 {
   "name": "t:sections.header.name",
   "class": "section-header",
-  "max_blocks": 3,
+  "max_blocks": 5,
   "settings": [
-    {
+      {
+        "type": "text",
+        "id": "logo_title",
+        "label": "Текст логотипа",
+        "default": "STLV"
+      },
+      {
       "type": "select",
       "id": "logo_position",
       "options": [
@@ -664,13 +671,7 @@
   "blocks": [
     {
       "type": "@app"
-    },
-    {
-      "type": "text",
-      "id": "text_logo",
-      "default": "STLV",
-      "label": "Текст логотипа"
-    },
+    }
   ]
 }
 {% endschema %}
