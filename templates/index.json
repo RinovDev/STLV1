@@ -1,5 +1,53 @@
 {
   "sections": {
+    "image_banner_AVWyQc": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_3zrtVR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hell From the Sky",
+            "heading_size": "h1"
+          }
+        },
+        "text_itxePq": {
+          "type": "text",
+          "settings": {
+            "text": "Придбай вже зараз",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "buttons_VaPH7z": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Придбати",
+            "button_link_1": "shopify:\/\/products\/світшоти-oversize",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_3zrtVR",
+        "text_itxePq",
+        "buttons_VaPH7z"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/448846474_828681518868987_3205798268362724783_n.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "image_behavior": "ambient",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "collection_list_pA4EYP": {
       "type": "collection-list",
       "blocks": {
@@ -77,6 +125,7 @@
     }
   },
   "order": [
+    "image_banner_AVWyQc",
     "collection_list_pA4EYP"
   ]
 }
