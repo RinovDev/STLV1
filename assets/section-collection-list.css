@@ -1,6 +1,12 @@
 .collection-list {
   margin-top: 0;
   margin-bottom: 0;
+  
+  
+}
+
+.collection-list li{
+  padding: 15px;
 }
 
 .collection-list-title {
