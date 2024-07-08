@@ -1,0 +1,20 @@
+{{ 'collection-filters.css' | asset_url | stylesheet_tag }}
+
+<div class="collection-template">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="sidebar">
+          <ul class="filter-list">
+            <li><a href="{{ collection.url | append: '?filter=СТ' }}">СТ</a></li>
+            <li><a href="{{ collection.url | append: '?filter=СГ' }}">СГ</a></li>
+            <li><a href="{{ collection.url | append: '?filter=ЧБ' }}">ЧБ</a></li>
+            <li><a href="{{ collection.url | append: '?filter=ПУШКИ' }}">ПУШКИ</a></li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

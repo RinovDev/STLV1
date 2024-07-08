@@ -88,6 +88,20 @@
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .header__heading-link {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  
+  }
+
+  .our_logo_title{
+    font-size:1.4rem;
+    width:100%;
+    font-weight:bold;
+    
+  }
+
   @media screen and (min-width: 750px) {
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -179,8 +193,7 @@
                   preload: true
                 }}
               </div>
-            {%- else -%}
-              <span class="h2">{{ section.settings.logo_title }}</span>
+              <h2 class="our_logo_title">{{ section.settings.logo_title }}</h2>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}

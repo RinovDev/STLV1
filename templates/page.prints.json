@@ -7,9 +7,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "collection_filters_yKni9x": {
+      "type": "collection-filters",
+      "settings": {
+        "section_heading": "Our Collections"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collection_filters_yKni9x"
   ]
 }

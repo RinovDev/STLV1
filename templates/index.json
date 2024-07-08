@@ -6,126 +6,152 @@
         "heading_3zrtVR": {
           "type": "heading",
           "settings": {
-            "heading": "Hell From the Sky",
-            "heading_size": "h1"
+            "heading": "\"Hell From the Sky\"",
+            "heading_size": "h0"
           }
         },
-        "text_itxePq": {
+        "text_3YVqtF": {
           "type": "text",
           "settings": {
-            "text": "Придбай вже зараз",
+            "text": "STLV MILITARY CLUB",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "text_Kzd8RB": {
+          "type": "text",
+          "settings": {
+            "text": "PEAKY BLINDERS",
             "text_style": "caption-with-letter-spacing"
           }
         },
         "buttons_VaPH7z": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Придбати",
-            "button_link_1": "shopify:\/\/products\/світшоти-oversize",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": true
+            "button_label_1": "ПРИДБАТИ",
+            "button_link_1": "shopify:\/\/collections\/stlv-prints",
+            "button_style_secondary_1": false
           }
         }
       },
       "block_order": [
         "heading_3zrtVR",
-        "text_itxePq",
+        "text_3YVqtF",
+        "text_Kzd8RB",
         "buttons_VaPH7z"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/448846474_828681518868987_3205798268362724783_n.jpg",
-        "image_overlay_opacity": 20,
+        "image": "shopify:\/\/shop_images\/2024-07-02_13.31.34.png",
+        "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "bottom-left",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "image_behavior": "ambient",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
     },
-    "collection_list_pA4EYP": {
-      "type": "collection-list",
+    "rich_text_aJGXFF": {
+      "type": "rich-text",
       "blocks": {
-        "featured_collection_gdXWiJ": {
-          "type": "featured_collection",
+        "heading_RJMLJQ": {
+          "type": "heading",
           "settings": {
-            "collection": "толстовки-oversize"
+            "heading": "МІЛІТАРІ ОДЯГ НА КОЖЕН ДЕНЬ",
+            "heading_size": "h1"
           }
         },
-        "featured_collection_pnitw3": {
-          "type": "featured_collection",
+        "text_tmMEbN": {
+          "type": "text",
           "settings": {
-            "collection": "футболки-oversizes"
+            "text": "<p>ОБИРАЙ СВІЙ ТОПОВИЙ ЛУК<\/p>"
           }
         },
-        "featured_collection_fQJB9W": {
-          "type": "featured_collection",
+        "button_XWE8XR": {
+          "type": "button",
           "settings": {
-            "collection": "толстовки-oversize"
-          }
-        },
-        "featured_collection_wHRHdk": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "футболки-oversizes"
-          }
-        },
-        "featured_collection_yfQECR": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "футболки-oversizes"
-          }
-        },
-        "featured_collection_3edkxf": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "світшоти-oversize"
-          }
-        },
-        "featured_collection_bGdTmg": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "толстовки-oversize"
-          }
-        },
-        "featured_collection_Knr97X": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "світшоти-oversize"
+            "button_label": "ПРИДБАТИ",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "featured_collection_gdXWiJ",
-        "featured_collection_pnitw3",
-        "featured_collection_fQJB9W",
-        "featured_collection_wHRHdk",
-        "featured_collection_yfQECR",
-        "featured_collection_3edkxf",
-        "featured_collection_bGdTmg",
-        "featured_collection_Knr97X"
+        "heading_RJMLJQ",
+        "text_tmMEbN",
+        "button_XWE8XR"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 16
+      }
+    },
+    "home_product_section_gWzLft": {
+      "type": "home-product-section",
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "blog": "",
+        "post_limit": 2,
+        "columns_desktop": 2,
         "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 56,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "home_small_image_banner_3LRr89": {
+      "type": "home-small-image-banner",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "home_media_content_k9Wc39": {
+      "type": "home-media-content",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner_AVWyQc",
-    "collection_list_pA4EYP"
+    "rich_text_aJGXFF",
+    "home_product_section_gWzLft",
+    "home_small_image_banner_3LRr89",
+    "home_media_content_k9Wc39"
   ]
 }

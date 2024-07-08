@@ -8,34 +8,36 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "ДЛЯ ПОКУПЦІВ",
             "menu": "footer"
           }
         },
-        "footer-1": {
-          "type": "link_list",
+        "image_q8qVUg": {
+          "type": "image",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "image": "shopify:\/\/shop_images\/b839bfd68658d8768f602b5e214f5587.png",
+            "image_width": 190,
+            "alignment": "center"
           }
         },
-        "footer-2": {
+        "text_4eyaUG": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
+            "heading": "НАШІ КОНТАКТИ",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
         }
       },
       "block_order": [
         "footer-0",
-        "footer-1",
-        "footer-2"
+        "image_q8qVUg",
+        "text_4eyaUG"
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
