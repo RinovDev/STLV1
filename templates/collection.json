@@ -26,17 +26,10 @@
             "heading": "ПРИНТ МОЖНА ПРИДБАТИ НА ЦИХ РЕЧАХ",
             "heading_size": "h2"
           }
-        },
-        "text_UcGGFB": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
         }
       },
       "block_order": [
-        "heading_3Fzz69",
-        "text_UcGGFB"
+        "heading_3Fzz69"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -59,11 +52,11 @@
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
-        "enable_filtering": true,
+        "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     }
