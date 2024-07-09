@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "banner": {
@@ -8,16 +17,50 @@
         "color_scheme": "scheme-1"
       }
     },
+    "rich_text_xV3Bhn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3Fzz69": {
+          "type": "heading",
+          "settings": {
+            "heading": "ПРИНТ МОЖНА ПРИДБАТИ НА ЦИХ РЕЧАХ",
+            "heading_size": "h2"
+          }
+        },
+        "text_UcGGFB": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3Fzz69",
+        "text_UcGGFB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "color_scheme": "",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "enable_filtering": true,
+        "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 36,
@@ -27,6 +70,7 @@
   },
   "order": [
     "banner",
+    "rich_text_xV3Bhn",
     "product-grid"
   ]
 }
