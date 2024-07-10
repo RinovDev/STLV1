@@ -135,8 +135,7 @@
         "product_xtfR3m"
       ],
       "settings": {
-        "image_ratio": "square",
-        "columns_desktop": 4
+        "image_ratio": "square"
       }
     },
     "related-products": {
