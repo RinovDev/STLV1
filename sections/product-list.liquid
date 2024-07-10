@@ -2,12 +2,12 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 <div class="product-list-wrapper page-width isolate">
-  <ul class="product-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down">
-    {%- for block in section.blocks limit: 4 -%}
+  <ul class="product-list grid grid--{{ block.settings.columns_desktop }}-col-desktop grid--{{ block.settings.columns_mobile }}-col-tablet-down">
+    {%- for block in block.blocks limit: 4 -%}
       <li class="product-list__item">
         {% render 'card-product',
           card_product: block.settings.product,
-          media_aspect_ratio: section.settings.image_ratio
+          media_aspect_ratio: block.settings.image_ratio
         %}
       </li>
     {%- endfor -%}
@@ -16,6 +16,7 @@
 
 {% schema %}
 {
+  "name": "Product List",
   "settings": [
     {
       "type": "select",
@@ -23,20 +24,19 @@
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.product-list.settings.image_ratio.options__1.label"
+          "label": "Adapt"
         },
         {
           "value": "portrait",
-          "label": "t:sections.product-list.settings.image_ratio.options__2.label"
+          "label": "Portrait"
         },
         {
           "value": "square",
-          "label": "t:sections.product-list.settings.image_ratio.options__3.label"
+          "label": "Square"
         }
       ],
       "default": "square",
-      "label": "t:sections.product-list.settings.image_ratio.label",
-      "info": "t:sections.product-list.settings.image_ratio.info"
+      "label": "Image Ratio"
     },
     {
       "type": "range",
@@ -45,7 +45,7 @@
       "max": 6,
       "step": 1,
       "default": 3,
-      "label": "t:sections.product-list.settings.columns_desktop.label"
+      "label": "Columns (Desktop)"
     },
     {
       "type": "range",
@@ -54,25 +54,25 @@
       "max": 3,
       "step": 1,
       "default": 1,
-      "label": "t:sections.product-list.settings.columns_mobile.label"
+      "label": "Columns (Mobile)"
     }
   ],
   "blocks": [
     {
       "type": "product",
-      "name": "t:sections.product-list.blocks.product.name",
+      "name": "Product",
       "settings": [
         {
           "type": "product",
           "id": "product",
-          "label": "t:sections.product-list.blocks.product.settings.product.label"
+          "label": "Select Product"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.product-list.presets.name",
+      "name": "Default",
       "blocks": [
         { "type": "product" },
         { "type": "product" },
