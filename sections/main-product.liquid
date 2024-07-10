@@ -493,16 +493,18 @@
                 <div class= "test">
                   <div class="product-list-wrapper page-width isolate">
                     <ul class="product-list grid">
-                      {%- for block in section.blocks  -%}
-                        <li class="product-list__item">
-                          {% render 'card-product',
-                            card_product: block.settings.product,
-                            media_aspect_ratio: 'square'
-                          %}
-                        </li>
+                      {%- for block in section.blocks -%}
+                        {%- if block.type == 'product' -%}
+                          <li class="product-list__item">
+                            {% render 'card-product',
+                              card_product: block.settings.product,
+                              media_aspect_ratio: 'square'
+                            %}
+                          </li>
+                        {%- endif -%}
                       {%- endfor -%}
                     </ul>
-                  </div>
+                  </div>                  
                 </div>
                 
               {%- when 'rating' -%}
