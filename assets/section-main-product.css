@@ -242,6 +242,7 @@ a.product__text {
 }
 
 .product__title {
+  text-align: center;
   word-break: break-word;
   margin-bottom: 1.5rem;
 }
