@@ -100,6 +100,53 @@
         "padding_bottom": 36
       }
     },
+    "product_list_hbJB6e": {
+      "type": "product-list",
+      "blocks": {
+        "product_7c6Lyh": {
+          "type": "product",
+          "settings": {
+            "product": "толстовки-oversize"
+          }
+        },
+        "product_gF6bHx": {
+          "type": "product",
+          "settings": {
+            "product": "красная-девка"
+          }
+        },
+        "product_Y3mzh9": {
+          "type": "product",
+          "settings": {
+            "product": "death-will-wait"
+          }
+        },
+        "product_xtfR3m": {
+          "type": "product",
+          "settings": {
+            "product": "футболка-oversize"
+          }
+        }
+      },
+      "block_order": [
+        "product_7c6Lyh",
+        "product_gF6bHx",
+        "product_Y3mzh9",
+        "product_xtfR3m"
+      ],
+      "settings": {
+        "title": "missing translation: \"t:sections.product-list.settings.title.default\"",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -122,6 +169,7 @@
   "order": [
     "main",
     "multicolumn",
+    "product_list_hbJB6e",
     "related-products"
   ]
 }
