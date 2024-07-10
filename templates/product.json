@@ -71,6 +71,46 @@
         "columns_mobile": 1
       }
     },
+    "product_list_dWBNGm": {
+      "type": "product-list",
+      "blocks": {
+        "product_zhy9kU": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_JkbAjp": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_YRFcyz": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_Fhk793": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_zhy9kU",
+        "product_JkbAjp",
+        "product_YRFcyz",
+        "product_Fhk793"
+      ],
+      "settings": {
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": 1
+      }
+    },
     "multicolumn": {
       "type": "multicolumn",
       "settings": {
@@ -88,46 +128,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "product_list_hbJB6e": {
-      "type": "product-list",
-      "blocks": {
-        "product_7c6Lyh": {
-          "type": "product",
-          "settings": {
-            "product": "толстовки-oversize"
-          }
-        },
-        "product_gF6bHx": {
-          "type": "product",
-          "settings": {
-            "product": "красная-девка"
-          }
-        },
-        "product_Y3mzh9": {
-          "type": "product",
-          "settings": {
-            "product": "death-will-wait"
-          }
-        },
-        "product_xtfR3m": {
-          "type": "product",
-          "settings": {
-            "product": "футболка-oversize"
-          }
-        }
-      },
-      "block_order": [
-        "product_7c6Lyh",
-        "product_gF6bHx",
-        "product_Y3mzh9",
-        "product_xtfR3m"
-      ],
-      "settings": {
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "columns_mobile": 1
       }
     },
     "related-products": {
@@ -151,8 +151,8 @@
   },
   "order": [
     "main",
+    "product_list_dWBNGm",
     "multicolumn",
-    "product_list_hbJB6e",
     "related-products"
   ]
 }
