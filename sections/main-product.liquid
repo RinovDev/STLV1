@@ -491,10 +491,9 @@
                 </div>
 
                 <div class= "test">
-
                   <div class="product-list-wrapper page-width isolate">
                     <ul class="product-list grid">
-                      {%- for block in section.blocks limit: 4 -%}
+                      {%- for block in section.blocks  -%}
                         <li class="product-list__item">
                           {% render 'card-product',
                             card_product: block.settings.product,
@@ -504,7 +503,6 @@
                       {%- endfor -%}
                     </ul>
                   </div>
-
                 </div>
                 
               {%- when 'rating' -%}
