@@ -25,25 +25,6 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="product-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > products.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
-    {%- unless section.settings.title == blank -%}
-      <h2
-        id="SectionHeading-{{ section.id }}"
-        class="product-list-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-      >
-        {{ section.settings.title }}
-      </h2>
-
-      {%- if section.settings.show_view_all and show_mobile_slider -%}
-        <a
-          href="{{ routes.collections_url }}"
-          id="ViewAll-{{ section.id }}"
-          class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
-        >
-          {{ 'sections.collection_list.view_all' | t }}
-        </a>
-      {%- endif -%}
-    {%- endunless -%}
 
     <ul
       class="product-list contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down{% if section.settings.swipe_on_mobile %} slider slider--tablet grid--peek{% endif %} product-list--{{ section.blocks.size }}-items"
