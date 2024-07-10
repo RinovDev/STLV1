@@ -31,6 +31,13 @@
       display:flex;
       justify-content: space-between;
     }
+
+    .product-list{
+      display:flex;
+      gap: 3rem;
+    }
+
+   
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -491,8 +498,8 @@
                 </div>
 
                 <div class= "test">
-                  <div class="product-list-wrapper page-width isolate">
-                    <ul class="product-list grid">
+                  <div class="product-list-wrapper ">
+                    <ul class="product-list ">
                       {%- for block in section.blocks -%}
                         {%- if block.type == 'product' -%}
                           <li class="product-list__item">
