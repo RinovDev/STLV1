@@ -54,6 +54,18 @@
           "type": "description",
           "settings": {
           }
+        },
+        "product_q7ADeR": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_BLbzQJ": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
@@ -63,7 +75,9 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "description"
+        "description",
+        "product_q7ADeR",
+        "product_BLbzQJ"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -99,49 +113,10 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "product_list_A3Bktj": {
-      "type": "product-list",
-      "blocks": {
-        "product_hqAmtb": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_UL84UC": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_haMB6c": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_MPU7tx": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "product_hqAmtb",
-        "product_UL84UC",
-        "product_haMB6c",
-        "product_MPU7tx"
-      ],
-      "settings": {
-        "image_ratio": "adapt"
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "product_list_A3Bktj"
+    "related-products"
   ]
 }
