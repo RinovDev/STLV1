@@ -491,6 +491,18 @@
                 </div>
 
                 <div class= "test">
+                  <div class="product-list-wrapper page-width isolate">
+                    <ul class="product-list grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down">
+                      {%- for block in section.blocks limit: 4 -%}
+                        <li class="product-list__item">
+                          {% render 'card-product',
+                            card_product: block.settings.product,
+                            media_aspect_ratio: section.settings.image_ratio
+                          %}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
                    
                 </div>
                 
@@ -749,6 +761,17 @@
   "tag": "section",
   "class": "section",
   "blocks": [
+    {
+      "type": "product",
+      "name": "t:sections.product-list.blocks.product.name",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "t:sections.product-list.blocks.product.settings.product.label"
+        }
+      ]
+    },
     {
       "type": "@app"
     },
@@ -2097,6 +2120,45 @@
   ],
   "settings": [
     {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.product-list.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.product-list.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.product-list.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "square",
+      "label": "t:sections.product-list.settings.image_ratio.label",
+      "info": "t:sections.product-list.settings.image_ratio.info"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 3,
+      "label": "t:sections.product-list.settings.columns_desktop.label"
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 1,
+      "label": "t:sections.product-list.settings.columns_mobile.label"
+    },
+    {
       "type": "checkbox",
       "id": "enable_sticky_info",
       "default": true,
@@ -2273,6 +2335,17 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.product-list.presets.name",
+      "blocks": [
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" }
+      ]
     }
   ]
 }
