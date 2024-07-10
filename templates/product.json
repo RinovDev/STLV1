@@ -81,65 +81,9 @@
         "padding_bottom": 12
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "product_list_hbJB6e": {
-      "type": "product-list",
-      "blocks": {
-        "product_7c6Lyh": {
-          "type": "product",
-          "settings": {
-            "product": "толстовки-oversize"
-          }
-        },
-        "product_gF6bHx": {
-          "type": "product",
-          "settings": {
-            "product": "красная-девка"
-          }
-        },
-        "product_Y3mzh9": {
-          "type": "product",
-          "settings": {
-            "product": "death-will-wait"
-          }
-        },
-        "product_xtfR3m": {
-          "type": "product",
-          "settings": {
-            "product": "футболка-oversize"
-          }
-        }
-      },
-      "block_order": [
-        "product_7c6Lyh",
-        "product_gF6bHx",
-        "product_Y3mzh9",
-        "product_xtfR3m"
-      ],
-      "settings": {
-        "image_ratio": "square"
-      }
-    },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -155,12 +99,49 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "product_list_A3Bktj": {
+      "type": "product-list",
+      "blocks": {
+        "product_hqAmtb": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_UL84UC": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_haMB6c": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_MPU7tx": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_hqAmtb",
+        "product_UL84UC",
+        "product_haMB6c",
+        "product_MPU7tx"
+      ],
+      "settings": {
+        "image_ratio": "adapt"
+      }
     }
   },
   "order": [
     "main",
-    "multicolumn",
-    "product_list_hbJB6e",
-    "related-products"
+    "related-products",
+    "product_list_A3Bktj"
   ]
 }
