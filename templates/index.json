@@ -1,75 +1,79 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
-    "image_banner_AVWyQc": {
+    "image_banner": {
       "type": "image-banner",
       "blocks": {
-        "heading_3zrtVR": {
+        "heading": {
           "type": "heading",
           "settings": {
-            "heading": "\"Hell From the Sky\"",
+            "heading": "HELL FROM THE SKY",
             "heading_size": "h0"
           }
         },
-        "text_3YVqtF": {
+        "text": {
           "type": "text",
           "settings": {
-            "text": "STLV MILITARY CLUB",
-            "text_style": "caption-with-letter-spacing"
+            "text": "STLV MILITARY CLUB  & ГОСТРІ КАРТУЗИ",
+            "text_style": "body"
           }
         },
-        "text_Kzd8RB": {
-          "type": "text",
-          "settings": {
-            "text": "PEAKY BLINDERS",
-            "text_style": "caption-with-letter-spacing"
-          }
-        },
-        "buttons_VaPH7z": {
+        "button": {
           "type": "buttons",
           "settings": {
             "button_label_1": "ПРИДБАТИ",
-            "button_link_1": "shopify:\/\/collections\/stlv-prints",
-            "button_style_secondary_1": false
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "heading_3zrtVR",
-        "text_3YVqtF",
-        "text_Kzd8RB",
-        "buttons_VaPH7z"
+        "heading",
+        "text",
+        "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/2024-07-02_13.31.34.png",
+        "image": "shopify:\/\/shop_images\/cab30e0f8153b30a1103f1b1abd99082.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
+        "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "rich_text_aJGXFF": {
+    "rich_text": {
       "type": "rich-text",
       "blocks": {
-        "heading_RJMLJQ": {
+        "heading": {
           "type": "heading",
           "settings": {
             "heading": "МІЛІТАРІ ОДЯГ НА КОЖЕН ДЕНЬ",
             "heading_size": "h1"
           }
         },
-        "text_tmMEbN": {
+        "text": {
           "type": "text",
           "settings": {
             "text": "<p>ОБИРАЙ СВІЙ ТОПОВИЙ ЛУК<\/p>"
           }
         },
-        "button_XWE8XR": {
+        "button_KkEekM": {
           "type": "button",
           "settings": {
             "button_label": "ПРИДБАТИ",
@@ -82,76 +86,163 @@
         }
       },
       "block_order": [
-        "heading_RJMLJQ",
-        "text_tmMEbN",
-        "button_XWE8XR"
+        "heading",
+        "text",
+        "button_KkEekM"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-1",
         "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 16
-      }
-    },
-    "home_product_section_gWzLft": {
-      "type": "home-product-section",
-      "settings": {
-        "heading": "",
-        "heading_size": "h2",
-        "blog": "",
-        "post_limit": 2,
-        "columns_desktop": 2,
-        "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 16,
+        "padding_top": 40,
         "padding_bottom": 0
       }
     },
-    "home_small_image_banner_3LRr89": {
-      "type": "home-small-image-banner",
+    "custom_catalog_6FNFWg": {
+      "type": "custom-catalog",
+      "blocks": {
+        "first_block_Xpgmm9": {
+          "type": "first_block",
+          "settings": {
+            "first_image": "shopify:\/\/shop_images\/napmoc1.jpg",
+            "first_text": "Your Text",
+            "show_first_text": true,
+            "first_button_text": "Перейти",
+            "show_first_button": true,
+            "first_paragraph_text": "Переглянути наші речі"
+          }
+        },
+        "first_block_qcwNnP": {
+          "type": "first_block",
+          "settings": {
+            "first_image": "shopify:\/\/shop_images\/napmoc5.jpg",
+            "first_text": "Your Text",
+            "show_first_text": true,
+            "first_button_text": "Перейти",
+            "show_first_button": true,
+            "first_paragraph_text": "Переглянути наші речі"
+          }
+        }
+      },
+      "block_order": [
+        "first_block_Xpgmm9",
+        "first_block_qcwNnP"
+      ],
       "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
-    "home_media_content_k9Wc39": {
-      "type": "home-media-content",
+    "image_banner_caWmx4": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_BKyXQM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bla bla bla",
+            "heading_size": "h1"
+          }
+        },
+        "text_fDWjFe": {
+          "type": "text",
+          "settings": {
+            "text": "STLV IS WAR - WAR IS STLV",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BKyXQM",
+        "text_fDWjFe"
+      ],
       "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "",
-        "post_limit": 3,
-        "columns_desktop": 3,
+        "image": "shopify:\/\/shop_images\/2024-07-10_10.24.13.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_n9rmHY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zFp6Qm": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR SOCIAL MEDIA",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zFp6Qm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_catalog_wHdWk9": {
+      "type": "custom-catalog",
+      "blocks": {
+        "first_block_ecAyWd": {
+          "type": "first_block",
+          "settings": {
+            "first_image": "shopify:\/\/shop_images\/napmoc5.jpg",
+            "first_text": "Your Text",
+            "show_first_text": true,
+            "first_button_text": "Перейти",
+            "show_first_button": false,
+            "first_paragraph_text": "Переглянути наші речі"
+          }
+        },
+        "first_block_DrinHz": {
+          "type": "first_block",
+          "settings": {
+            "first_image": "shopify:\/\/shop_images\/napmoc5.jpg",
+            "first_text": "Your Text",
+            "show_first_text": true,
+            "first_button_text": "Перейти",
+            "show_first_button": false,
+            "first_paragraph_text": "Переглянути наші речі"
+          }
+        },
+        "first_block_iKPDJc": {
+          "type": "first_block",
+          "settings": {
+            "first_image": "shopify:\/\/shop_images\/napmoc1.jpg",
+            "first_text": "Your Text",
+            "show_first_text": true,
+            "first_button_text": "Перейти",
+            "show_first_button": false,
+            "first_paragraph_text": "Переглянути наші речі"
+          }
+        }
+      },
+      "block_order": [
+        "first_block_ecAyWd",
+        "first_block_DrinHz",
+        "first_block_iKPDJc"
+      ],
+      "settings": {
       }
     }
   },
   "order": [
-    "image_banner_AVWyQc",
-    "rich_text_aJGXFF",
-    "home_product_section_gWzLft",
-    "home_small_image_banner_3LRr89",
-    "home_media_content_k9Wc39"
+    "image_banner",
+    "rich_text",
+    "custom_catalog_6FNFWg",
+    "image_banner_caWmx4",
+    "rich_text_n9rmHY",
+    "custom_catalog_wHdWk9"
   ]
 }

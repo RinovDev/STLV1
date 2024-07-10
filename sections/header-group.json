@@ -1,24 +1,33 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement_bar_Hz7ap4": {
+    "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_YtbNQH": {
+        "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "ВІтаємо в нашому магазині",
+            "text": "Вітаємо в нашому магазині",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement_YtbNQH"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "",
-        "show_line_separator": false,
+        "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -29,7 +38,6 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_title": "STLV-CLUB",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
@@ -40,15 +48,15 @@
         "enable_country_selector": true,
         "enable_language_selector": true,
         "enable_customer_avatar": true,
-        "mobile_logo_position": "center",
+        "mobile_logo_position": "left",
         "margin_bottom": 0,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     }
   },
   "order": [
-    "announcement_bar_Hz7ap4",
+    "announcement-bar",
     "header"
   ]
 }

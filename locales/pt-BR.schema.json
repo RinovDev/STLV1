@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "settings_schema": {
     "colors": {
@@ -775,7 +784,7 @@
             "label": "Corpo"
           },
           "options__2": {
-            "label": "Legenda"
+            "label": "Subtítulo"
           },
           "options__3": {
             "label": "Letras maiúsculas"
@@ -1147,7 +1156,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -1301,7 +1310,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               }
             }
           }
@@ -1332,7 +1341,7 @@
             "text_style": {
               "label": "Estilo de texto",
               "options__1": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__2": {
                 "label": "Letras maiúsculas"
@@ -1661,7 +1670,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -2032,7 +2041,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -2436,7 +2445,7 @@
             "text_style": {
               "label": "Estilo de texto",
               "options__1": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__2": {
                 "label": "Letras maiúsculas"
@@ -2536,7 +2545,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "options__3": {
                 "label": "Letras maiúsculas"
@@ -2786,7 +2795,7 @@
                 "label": "Corpo"
               },
               "options__2": {
-                "label": "Legenda"
+                "label": "Subtítulo"
               },
               "label": "Estilo de texto"
             }

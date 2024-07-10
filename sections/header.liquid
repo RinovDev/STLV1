@@ -80,26 +80,15 @@
 
 {%- style -%}
   .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
 
   .section-header {
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
     margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  .header__heading-link {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  
-  }
-
-  .our_logo_title{
-    font-size:1.4rem;
-    width:100%;
-    font-weight:bold;
-    
   }
 
   @media screen and (min-width: 750px) {
@@ -193,7 +182,8 @@
                   preload: true
                 }}
               </div>
-              <h2 class="our_logo_title">{{ section.settings.logo_title }}</h2>
+            {%- else -%}
+              <span class="h2">{{ shop.name }}</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -233,7 +223,7 @@
                 }}
               </div>
             {%- else -%}
-              <span class="h2">{{}}</span>
+              <span class="h2">{{ shop.name }}</span>
             {%- endif -%}
           </a>
       {%- if request.page_type == 'index' -%}
@@ -478,19 +468,12 @@
 {%- endif -%}
 
 {% schema %}
-
 {
   "name": "t:sections.header.name",
   "class": "section-header",
-  "max_blocks": 5,
+  "max_blocks": 3,
   "settings": [
-      {
-        "type": "text",
-        "id": "logo_title",
-        "label": "Текст логотипа",
-        "default": "STLV"
-      },
-      {
+    {
       "type": "select",
       "id": "logo_position",
       "options": [

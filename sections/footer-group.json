@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -8,36 +17,35 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "ДЛЯ ПОКУПЦІВ",
+            "heading": "Quick links",
             "menu": "footer"
           }
         },
-        "image_q8qVUg": {
-          "type": "image",
+        "footer-1": {
+          "type": "link_list",
           "settings": {
-            "image": "shopify:\/\/shop_images\/b839bfd68658d8768f602b5e214f5587.png",
-            "image_width": 190,
-            "alignment": "center"
+            "heading": "Info",
+            "menu": "footer"
           }
         },
-        "text_4eyaUG": {
+        "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "НАШІ КОНТАКТИ",
+            "heading": "Our mission",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
         }
       },
       "block_order": [
         "footer-0",
-        "image_q8qVUg",
-        "text_4eyaUG"
+        "footer-1",
+        "footer-2"
       ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
+        "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
