@@ -30,19 +30,6 @@
   }
 }
 
-.multicolumn-references {
-  display: flex;
-  width: 100%;
-}
-
-.multicolumn-page{
-  
-}
-
-.multicolumn .page-width {
-  display: flex;
-}
-
 .multicolumn-card__image-wrapper--third-width {
   width: 33%;
 }
@@ -58,29 +45,13 @@
 }
 
 .multicolumn .button {
-  flex: 1;
-  margin: 0;
-  border: 1px solid #fff;
-  height: 300px;
-  width: 300px;
-  font-size: 3.75rem;
-  background: gray;
-  box-shadow: none;
-}
-
-@media screen and (max-width: 768px) {
-  .multicolumn .button {
-    font-size: 2.5rem;
-  }
-}
-
-.multicolumn .button::after {
- 
-  box-shadow: none;
+  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 750px) {
-
+  .multicolumn .button {
+    margin-top: 4rem;
+  }
 }
 
 .multicolumn-list {

@@ -21,10 +21,6 @@
 
 .collection-hero__text-wrapper {
   flex-basis: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:white;
 }
 
 @media screen and (min-width: 750px) {
@@ -99,8 +95,4 @@
     margin-left: 3rem;
     min-height: 20rem;
   }
-}
-
-.collection-hero{
-  background:grey;
 }

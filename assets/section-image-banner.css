@@ -8,10 +8,6 @@
 
 .banner__box {
   text-align: center;
-  background:none;
-  color:white;
-  justify-content: center;
-  
 }
 
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
@@ -278,9 +274,7 @@
   align-items: center;
   justify-content: center;
   z-index: 2;
- 
 }
-
 
 @media screen and (min-width: 750px) {
   .banner__content {
@@ -345,8 +339,7 @@
 }
 
 .banner__box {
-  display: flex;
-  flex-direction: column;
+  padding: 4rem 1.5rem;
   position: relative;
   height: fit-content;
   align-items: center;
@@ -401,11 +394,7 @@
   width: 100%;
   height: 100%;
 }
-.banner__text{
-  font-family: montserrat;
-  font-size: 3rem;
-  margin: 0;
-}
+
 .banner__box > * + .banner__text {
   margin-top: 1.5rem;
 }
@@ -445,9 +434,6 @@
 }
 
 .banner__heading {
-  font-family: copperplate ;
-  font-weight: bold; 
-  color: yellow;
   margin-bottom: 0;
 }
 
@@ -461,20 +447,6 @@
   gap: 1rem;
   max-width: 45rem;
   word-break: break-word;
-
-}
-
-.banner__buttons a{
-  font-family: montseratt;
-  margin-top: rem;
-  margin-bottom: 0;
-  font-size: 2.5rem;
-  border-radius: 3rem;
-  outline:none;
-}
-
-.banner__buttons a:after{
- box-shadow: none;
 }
 
 @media screen and (max-width: 749px) {

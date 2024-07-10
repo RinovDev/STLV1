@@ -1,20 +1,5 @@
 .rich-text {
   z-index: 1;
-  font-family: montseratt;
-}
-
-.rich-text h2{
-  font-family: montseratt;
-  font-weight: bold;
-}
-
-.rich-text p{
-  font-size: 3rem;
-}
-
-.rich-text a{
-  font-size: 3rem;
-  background: black;
 }
 
 .rich-text__wrapper {
@@ -34,7 +19,7 @@
 
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
-    width: 70%;
+    width: 100%;
   }
 
   .rich-text__wrapper--left {
