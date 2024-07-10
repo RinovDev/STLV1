@@ -54,6 +54,24 @@
           "type": "description",
           "settings": {
           }
+        },
+        "product_dBzMqn": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_EUMeNe": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_QfKYwK": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
@@ -63,7 +81,10 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "description"
+        "description",
+        "product_dBzMqn",
+        "product_EUMeNe",
+        "product_QfKYwK"
       ],
       "settings": {
         "enable_sticky_info": true,
