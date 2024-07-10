@@ -1,12 +1,13 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 <div class="product-list-wrapper page-width isolate">
-  <ul class="product-list">
+  <ul class="product-list grid">
     {%- for block in section.blocks limit: 4 -%}
       <li class="product-list__item">
         {% render 'card-product',
           card_product: block.settings.product,
-          media_aspect_ratio: section.settings.image_ratio
+          media_aspect_ratio: 'square'
         %}
       </li>
     {%- endfor -%}
@@ -16,28 +17,9 @@
 {% schema %}
 {
   "name": "Product List",
-  "settings": [
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "Adapt"
-        },
-        {
-          "value": "portrait",
-          "label": "Portrait"
-        },
-        {
-          "value": "square",
-          "label": "Square"
-        }
-      ],
-      "default": "square",
-      "label": "Image Ratio"
-    }
-  ],
+  "tag": "section",
+  "class": "section-product-list",
+  "max_blocks": 4,
   "blocks": [
     {
       "type": "product",
@@ -46,7 +28,7 @@
         {
           "type": "product",
           "id": "product",
-          "label": "Product"
+          "label": "Select product"
         }
       ]
     }
@@ -54,12 +36,6 @@
   "presets": [
     {
       "name": "Product List",
-      "blocks": [
-        { "type": "product" },
-        { "type": "product" },
-        { "type": "product" },
-        { "type": "product" }
-      ]
     }
   ]
 }
