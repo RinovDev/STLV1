@@ -491,7 +491,20 @@
                 </div>
 
                 <div class= "test">
-                  
+
+                  <div class="product-list-wrapper page-width isolate">
+                    <ul class="product-list grid">
+                      {%- for block in section.blocks limit: 4 -%}
+                        <li class="product-list__item">
+                          {% render 'card-product',
+                            card_product: block.settings.product,
+                            media_aspect_ratio: 'square'
+                          %}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+
                 </div>
                 
               {%- when 'rating' -%}
@@ -749,6 +762,17 @@
   "tag": "section",
   "class": "section",
   "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select product"
+        }
+      ]
+    },
     {
       "type": "@app"
     },
