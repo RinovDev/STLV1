@@ -54,18 +54,6 @@
           "type": "description",
           "settings": {
           }
-        },
-        "product_q7ADeR": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_BLbzQJ": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
         }
       },
       "block_order": [
@@ -75,9 +63,7 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "description",
-        "product_q7ADeR",
-        "product_BLbzQJ"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
