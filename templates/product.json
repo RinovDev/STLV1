@@ -55,28 +55,17 @@
           "settings": {
           }
         },
-        "product_NENpjy": {
-          "type": "product",
+        "complementary_gP8GCV": {
+          "type": "complementary",
           "settings": {
-            "product": ""
-          }
-        },
-        "product_bVcpXJ": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_JPLnE9": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_YNRBPG": {
-          "type": "product",
-          "settings": {
-            "product": ""
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "banana",
+            "product_list_limit": 4,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
           }
         }
       },
@@ -88,10 +77,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
-        "product_NENpjy",
-        "product_bVcpXJ",
-        "product_JPLnE9",
-        "product_YNRBPG"
+        "complementary_gP8GCV"
       ],
       "settings": {
         "enable_sticky_info": true,
