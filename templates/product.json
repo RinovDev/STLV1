@@ -56,7 +56,7 @@
             "block_heading": "Придбайте разом",
             "make_collapsible_row": false,
             "icon": "none",
-            "product_list_limit": 4,
+            "product_list_limit": 5,
             "products_per_page": 4,
             "pagination_style": "counter",
             "image_ratio": "portrait",
