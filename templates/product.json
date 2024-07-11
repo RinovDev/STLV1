@@ -62,7 +62,7 @@
             "make_collapsible_row": false,
             "icon": "recycle",
             "product_list_limit": 4,
-            "products_per_page": 4,
+            "products_per_page": 1,
             "pagination_style": "counter",
             "image_ratio": "portrait",
             "enable_quick_add": true
