@@ -503,8 +503,8 @@
                   <div>
                     <h3>Придбайте разом</h3>
                   </div>
-                  <div class="product-list-wrapper ">
-                    <ul class="product-list ">
+                  <div class="product-list-wrapper">
+                    <ul class="product-list">
                       {%- for block in section.blocks -%}
                         {%- if block.type == 'product' -%}
                           <li class="product-list__item">
@@ -512,11 +512,20 @@
                               card_product: block.settings.product,
                               media_aspect_ratio: 'square'
                             %}
+                
+                            {% if block.settings.additional_products.size > 0 %}
+                              <ul class="additional-products">
+                                {%- for additional_product in block.settings.additional_products -%}
+                                  <li>{{ additional_product.title }}</li>
+                                  {# Adjust 'additional_product' to match your render logic #}
+                                {%- endfor -%}
+                              </ul>
+                            {% endif %}
                           </li>
                         {%- endif -%}
                       {%- endfor -%}
                     </ul>
-                  </div>                  
+                  </div>                
                 </div>
                 
               {%- when 'rating' -%}
