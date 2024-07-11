@@ -503,31 +503,20 @@
                   <div>
                     <h3>Придбайте разом</h3>
                   </div>
-                  <div class="main-product-wrapper">
-                    {%- for block in section.blocks -%}
-                      {%- if block.type == 'product' -%}
-                        <div class="product-card-wrapper">
-                          <!-- Рендеринг основной карты продукта -->
-                          {% render 'card-product', card_product: block.settings.product, media_aspect_ratio: 'square' %}
-                        </div>
-                      {%- endif -%}
-                      
-                      {%- if block.type == 'additional_product' -%}
-                        <div class="additional-products">
-                          <ul class="product-list grid">
-                            <li class="product-list__item">
-                              {% render 'card-product',
-                                card_product: block.settings.additional_product,
-                                media_aspect_ratio: 'square'
-                              %}
-                            </li>
-                          </ul>
-                        </div>
-                      {%- endif -%}
-                    {%- endfor -%}
-                  </div>
-                  
-                    
+                  <div class="product-list-wrapper ">
+                    <ul class="product-list ">
+                      {%- for block in section.blocks -%}
+                        {%- if block.type == 'product' -%}
+                          <li class="product-list__item">
+                            {% render 'card-product',
+                              card_product: block.settings.product,
+                              media_aspect_ratio: 'square'
+                            %}
+                          </li>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </ul>
+                  </div>                  
                 </div>
                 
               {%- when 'rating' -%}
@@ -792,18 +781,7 @@
         {
           "type": "product",
           "id": "product",
-          "label": "Select main product"
-        }
-      ]
-    },
-    {
-      "type": "additional_product",
-      "name": "Additional Product",
-      "settings": [
-        {
-          "type": "product",
-          "id": "additional_product",
-          "label": "Select additional product"
+          "label": "Select product"
         }
       ]
     },
