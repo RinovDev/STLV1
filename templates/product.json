@@ -58,7 +58,7 @@
         "complementary_fg4zhp": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Pairs well with",
+            "block_heading": "Придбайте разом",
             "make_collapsible_row": false,
             "icon": "price_tag",
             "product_list_limit": 4,
