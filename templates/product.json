@@ -55,28 +55,16 @@
           "settings": {
           }
         },
-        "product_NENpjy": {
-          "type": "product",
+        "additional_product_K8xqxk": {
+          "type": "additional_product",
           "settings": {
-            "product": ""
+            "additional_product": ""
           }
         },
-        "product_bVcpXJ": {
-          "type": "product",
+        "additional_product_GrC6L3": {
+          "type": "additional_product",
           "settings": {
-            "product": ""
-          }
-        },
-        "product_JPLnE9": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_YNRBPG": {
-          "type": "product",
-          "settings": {
-            "product": ""
+            "additional_product": ""
           }
         }
       },
@@ -88,10 +76,8 @@
         "variant_picker",
         "buy_buttons",
         "description",
-        "product_NENpjy",
-        "product_bVcpXJ",
-        "product_JPLnE9",
-        "product_YNRBPG"
+        "additional_product_K8xqxk",
+        "additional_product_GrC6L3"
       ],
       "settings": {
         "enable_sticky_info": true,
