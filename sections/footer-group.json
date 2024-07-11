@@ -21,6 +21,14 @@
             "menu": "footer"
           }
         },
+        "image_frapKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b839bfd68658d8768f602b5e214f5587.png",
+            "image_width": 220,
+            "alignment": "center"
+          }
+        },
         "footer-2": {
           "type": "text",
           "settings": {
@@ -31,6 +39,7 @@
       },
       "block_order": [
         "footer-0",
+        "image_frapKp",
         "footer-2"
       ],
       "settings": {
