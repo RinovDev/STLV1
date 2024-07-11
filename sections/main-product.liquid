@@ -509,26 +509,24 @@
                         <div class="product-card-wrapper">
                           <!-- Рендеринг основной карты продукта -->
                           {% render 'card-product', card_product: block.settings.product, media_aspect_ratio: 'square' %}
-                          
-                          <!-- Рендеринг дополнительных продуктов для этой карты продукта -->
-                          <div class="additional-products">
-                            <ul class="product-list grid">
-                              {%- for sub_block in block.blocks -%}
-                                {%- if sub_block.type == 'additional_product' -%}
-                                  <li class="product-list__item">
-                                    {% render 'card-product',
-                                      card_product: sub_block.settings.additional_product,
-                                      media_aspect_ratio: 'square'
-                                    %}
-                                  </li>
-                                {%- endif -%}
-                              {%- endfor -%}
-                            </ul>
-                          </div>
+                        </div>
+                      {%- endif -%}
+                      
+                      {%- if block.type == 'additional_product' -%}
+                        <div class="additional-products">
+                          <ul class="product-list grid">
+                            <li class="product-list__item">
+                              {% render 'card-product',
+                                card_product: block.settings.additional_product,
+                                media_aspect_ratio: 'square'
+                              %}
+                            </li>
+                          </ul>
                         </div>
                       {%- endif -%}
                     {%- endfor -%}
                   </div>
+                  
                     
                 </div>
                 
@@ -794,7 +792,18 @@
         {
           "type": "product",
           "id": "product",
-          "label": "Select product"
+          "label": "Select main product"
+        }
+      ]
+    },
+    {
+      "type": "additional_product",
+      "name": "Additional Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "additional_product",
+          "label": "Select additional product"
         }
       ]
     },
