@@ -60,12 +60,12 @@
           "settings": {
             "block_heading": "Придбайте разом",
             "make_collapsible_row": false,
-            "icon": "price_tag",
+            "icon": "recycle",
             "product_list_limit": 4,
-            "products_per_page": 3,
+            "products_per_page": 4,
             "pagination_style": "counter",
             "image_ratio": "portrait",
-            "enable_quick_add": false
+            "enable_quick_add": true
           }
         }
       },
