@@ -55,28 +55,10 @@
           "settings": {
           }
         },
-        "product_NENpjy": {
+        "product_N9CdnB": {
           "type": "product",
           "settings": {
-            "product": ""
-          }
-        },
-        "product_bVcpXJ": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_JPLnE9": {
-          "type": "product",
-          "settings": {
-            "product": ""
-          }
-        },
-        "product_YNRBPG": {
-          "type": "product",
-          "settings": {
-            "product": ""
+            "product": "футболка-oversize"
           }
         }
       },
@@ -88,10 +70,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
-        "product_NENpjy",
-        "product_bVcpXJ",
-        "product_JPLnE9",
-        "product_YNRBPG"
+        "product_N9CdnB"
       ],
       "settings": {
         "enable_sticky_info": true,
