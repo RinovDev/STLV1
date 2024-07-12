@@ -5,7 +5,6 @@
     align-items: flex-start;
     width: 100%;
     padding: 20px;
-
   }
 
   .prints-container {
@@ -22,18 +21,42 @@
     flex: 1;
   }
 
-  .collection-filters button{
+  .collection-filters button {
     display: inline-block;
-    background:none;
+    background: none;
     border: none;
     transition: transform 0.5s ease;
     text-align: left;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 35px; /* Оставляем место для квадратика */
   }
 
-  .collection-filters button:hover{
-    color:grey;
+  .collection-filters button:hover {
+    color: grey;
     transform: scale(1.1);
+  }
+
+  .collection-filters button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    background: white;
+  }
+
+  .collection-filters button.active::before {
+    content: '✔';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
   }
 
   .collection-items {
@@ -49,12 +72,11 @@
     opacity: 0;
     transform: scale(0.9);
     transition: opacity 0.5s ease, transform 0.5s ease;
-    text-decoration:none;
+    text-decoration: none;
   }
 
-  .prints-content:hover{
+  .prints-content:hover {
     transform: scale(1.05);
-    
   }
 
   .collection-item img {
@@ -85,7 +107,7 @@
       width: 100%;
     }
 
-    .all-collections-section{
+    .all-collections-section {
       flex-direction: column;
       justify-content: center;
       align-items: baseline;
@@ -93,10 +115,9 @@
   }
 </style>
 
-<div class=" page-width all-collections-section">
- 
-
+<div class="page-width all-collections-section">
   <div class="collection-filters">
+    <h3 style ="font-weight:bold;">Категорія</h3>
     <button class="filter-button" data-filter="all">All</button>
     <button class="filter-button" data-filter="STLV">STLV</button>
     <button class="filter-button" data-filter="SUNSET GOONS">SUNSET GOONS</button>
@@ -127,16 +148,22 @@
 
     filterButtons.forEach(button => {
       button.addEventListener('click', function() {
+        // Удаляем класс active со всех кнопок
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+
+        // Добавляем класс active к текущей кнопке
+        this.classList.add('active');
+
         const filter = this.getAttribute('data-filter');
 
         collectionItems.forEach(item => {
           const categories = item.getAttribute('data-categories');
           if (filter === 'all' || categories.includes(filter)) {
             item.style.display = 'flex';
-            setTimeout(() => item.classList.add('visible'), 10); 
+            setTimeout(() => item.classList.add('visible'), 10);
           } else {
             item.classList.remove('visible');
-            setTimeout(() => item.style.display = 'none', 500); 
+            setTimeout(() => item.style.display = 'none', 500);
           }
         });
       });
