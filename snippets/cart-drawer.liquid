@@ -17,8 +17,8 @@
   }
 </style>
 
-<cart-drawer class="  drawer{% if cart == empty %} is-empty{% endif %}">
-  <div id=" CartDrawer" class="cart-drawer">
+<cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
+  <div id="CartDrawer" class="cart-drawer">
     <div id="CartDrawer-Overlay" class="cart-drawer__overlay"></div>
     <div
       class="drawer__inner gradient color-{{ settings.cart_color_scheme }}"
@@ -489,7 +489,7 @@
 
           <div class="totals" role="status">
             
-            <p style = "font-weight: bold;"class="totals__total-value"> Загальна сума</p>
+            <p class="totals__total-value"> Загальна сума</p>
             <p class="totals__total-value">  {{ cart.total_price | money_with_currency }}</p>
           </div>
 
