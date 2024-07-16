@@ -32,12 +32,16 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
-            let button = document.getElementById('telegramButton');
-            if (button) {
+        let button = document.getElementById('telegramButton');
+        if (button) {
+            let wasButtonDisplayed = localStorage.getItem('telegramButtonDisplayed');
+            let delay = wasButtonDisplayed ? 1000 : 8000;
+
+            setTimeout(function() {
                 button.classList.add('visible');
-            }
-        }, 5000);
+                localStorage.setItem('telegramButtonDisplayed', 'true');
+            }, delay);
+        }
     });
 </script>
 
