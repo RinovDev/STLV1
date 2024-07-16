@@ -299,7 +299,7 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-
+    {%render 'telegram-button'%}
     {% sections 'footer-group' %}
 
     <ul hidden>
@@ -355,5 +355,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    
   </body>
 </html>
