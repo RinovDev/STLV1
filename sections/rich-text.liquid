@@ -17,6 +17,11 @@
     font-family: Montserrat-ExtraBold;
     font-size:4rem;
   }
+
+  .custom_rich_p2{
+    letter-spacing: 0.8rem;
+
+  }
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -41,7 +46,11 @@
               </h2>
             {%- when 'caption' -%}
               <p
-                class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
+                 {% if section.settings.our_custom_fonts %}
+                    custom_rich_p2
+                  {% endif %}"
+                "
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -59,7 +68,11 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ block.settings.text }}
+              {% if section.settings.our_custom_fonts %}
+                     <p style ="letter-spacing:0.8rem;">ОБИРАЙ СВОЮ НОВУ УЛЮБЛЕНУ РІЧ В ГАРДЕРОБІ</p>
+                    {%else%}
+                     <p>{{ block.settings.text }}</p>
+                  {% endif %}"
               </div>
             {%- when 'button' -%}
               <div
