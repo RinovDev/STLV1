@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="stylesheet" href="https://use.typekit.net/oqg1egp.css">
+  
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      {% comment %} <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin> {% endcomment %}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
     <title>
@@ -45,6 +45,17 @@
     %}
 
     {% style %}
+      @font-face {
+        font-family: "aAbsoluteEmpire";
+        src: url("{{ 'aAbsoluteEmpire.woff' | asset_url }}") format("woff"),
+        url("{{ 'aAbsoluteEmpire.woff2' | asset_url }}") format("woff2")
+      }
+
+      @font-face {
+       font-family: "Montserrat-ExtraBold";
+       src: url("{{ 'Montserrat-ExtraBold.woff' | asset_url }}") format("woff"),
+       url("{{ 'Montserrat-ExtraBold.woff2' | asset_url }}") format("woff2")
+      }
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}

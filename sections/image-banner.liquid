@@ -29,14 +29,6 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
-  
-
-  @font-face {
-  font-family: "aAbsoluteEmpire";
-  src: url("{{ 'aAbsoluteEmpire.woff' | asset_url }}") format("woff"),
-       url("{{ 'aAbsoluteEmpire.woff2' | asset_url }}") format("woff2")
-  }
-
   .custom_h2{
     font-family: aAbsoluteEmpire;
     font-size: 6rem;
@@ -58,12 +50,13 @@
     transform: scale(1.02)
   }
 
-  .button{
+  .custom_btn{
     color:black;
-    font-family: "montserrat", sans-serif;
-    font-weight: 800;
-    font-style: normal;
+    font-family: Montserrat-ExtraBold;
+    font-size:2rem;
   }
+
+  
 {%- endstyle -%}
 
 {%- liquid
@@ -191,7 +184,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="custom_btn button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -203,7 +196,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="custom_btn button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %} "
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
