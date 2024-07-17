@@ -3567,8 +3567,4 @@ details-disclosure > details {
   }
 }
 
-@font-face {
-  font-family: "aAbsoluteEmpire";
-  src: url("{{ 'aAbsoluteEmpire.woff' | asset_url }}") format("woff"),
-       url("{{ 'aAbsoluteEmpire.woff2' | asset_url }}") format("woff2")
-  }
+

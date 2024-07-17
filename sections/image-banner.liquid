@@ -28,10 +28,16 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
+  @font-face {
+  font-family: "aAbsoluteEmpire";
+  src: url("{{ 'aAbsoluteEmpire.woff' | asset_url }}") format("woff"),
+       url("{{ 'aAbsoluteEmpire.woff2' | asset_url }}") format("woff2")
+  }
+
   .custom_h2{
     font-family: aAbsoluteEmpire;
     font-size: 6rem;
-    font-weight: bold;
+   
     color: #ffd837;
   }
 {%- endstyle -%}
