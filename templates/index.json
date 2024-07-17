@@ -95,23 +95,23 @@
         "first_block_Xpgmm9": {
           "type": "first_block",
           "settings": {
-            "first_image": "shopify:\/\/shop_images\/prints.jpg",
-            "first_text": "Your Text",
+            "first_image": "shopify:\/\/shop_images\/1.png",
+            "first_text": "КАТАЛОГ ПРИНТІВ",
             "show_first_text": true,
-            "first_button_text": "Перейти",
+            "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ ПРІНТИ",
             "show_first_button": true,
-            "first_paragraph_text": "Переглянути наші речі"
+            "first_paragraph_text": ""
           }
         },
         "first_block_qcwNnP": {
           "type": "first_block",
           "settings": {
-            "first_image": "shopify:\/\/shop_images\/clothes.jpg",
-            "first_text": "Your Text",
+            "first_image": "shopify:\/\/shop_images\/1_f7164165-9004-4ea5-bb1f-6e9397fb4b20.png",
+            "first_text": "КАТАЛОГ РЕЧЕЙ",
             "show_first_text": true,
-            "first_button_text": "Перейти",
+            "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ РЕЧІ",
             "show_first_button": true,
-            "first_paragraph_text": "Переглянути наші речі"
+            "first_paragraph_text": ""
           }
         }
       },
