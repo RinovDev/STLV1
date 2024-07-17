@@ -125,19 +125,19 @@
     "image_banner_caWmx4": {
       "type": "image-banner",
       "blocks": {
-        "text_cCn6xc": {
-          "type": "text",
+        "heading_9F7ta7": {
+          "type": "heading",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "text_cCn6xc"
+        "heading_9F7ta7"
       ],
       "settings": {
-        "our_custom_fonts": false,
+        "our_custom_fonts": true,
         "image": "shopify:\/\/shop_images\/2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
