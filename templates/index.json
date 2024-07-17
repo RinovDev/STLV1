@@ -22,8 +22,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "STLV MILITARY CLUB  & ГОСТРІ КАРТУЗИ",
-            "text_style": "body"
+            "text": "\"ПЕКЛО З НЕБЕС\" В КОЛАБОРАЦІЇ З ПІДРОЗДІЛОМ \"ГОСТРІ КАРТУЗИ\" ПРИБУТОК З ЦЬОГО ПРІНТА ПІДЕ ХЛОПЦЯМ НА ЗАКУПІВЛЮ FPV",
+            "text_style": "caption-with-letter-spacing"
           }
         },
         "button": {
@@ -44,6 +44,7 @@
         "button"
       ],
       "settings": {
+        "our_custom_fonts": true,
         "image": "shopify:\/\/shop_images\/cab30e0f8153b30a1103f1b1abd99082.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
@@ -155,6 +156,7 @@
         "text_fDWjFe"
       ],
       "settings": {
+        "our_custom_fonts": true,
         "image": "shopify:\/\/shop_images\/2024-07-10_10.24.13.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
