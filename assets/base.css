@@ -1214,7 +1214,6 @@ button.shopify-payment-button__button--unbranded {
   font: inherit;
   font-size: 1.5rem;
   text-decoration: none;
-  color: rgb(var(--color-button-text));
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
@@ -1267,9 +1266,7 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
 }
 
-.button--secondary:after {
-  --border-opacity: var(--buttons-border-opacity);
-}
+
 
 .button:focus-visible,
 .button:focus,

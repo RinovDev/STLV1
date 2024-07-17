@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="stylesheet" href="https://use.typekit.net/oqg1egp.css">
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      {% comment %} <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin> {% endcomment %}
     {%- endunless -%}
 
     <title>
@@ -249,9 +250,14 @@
           font-size: 1.6rem;
         }
       }
+
+    <style>
+       @import url("https://use.typekit.net/oqg1egp.css");
+    </style>
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
@@ -277,15 +283,16 @@
         onload="this.media='all'"
       >
     {%- endif -%}
-
+    
     <script>
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
   </head>
-
+    
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>

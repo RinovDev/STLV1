@@ -15,9 +15,16 @@
   visibility: visible;
 }
 
+.drawer.active .drawer__inner {
+  right: 50%;
+  left: 50%;
+}
+
 .drawer__inner {
-  margin-right: 30rem;
-  margin-top: 10rem;
+  translate: -50% -50%;
+  position: absolute;
+  top: 50%;
+  right: -200%;
   height: 70%;
   width: 80rem;
   max-width: calc(100vw - 3rem);
@@ -27,8 +34,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transform: translateX(100%);
-  transition: transform var(--duration-default) ease;
+  transition: translate right left var(--duration-default) ease;
 }
 
 .drawer__inner-empty {
@@ -64,10 +70,6 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 
 .cart-drawer__warnings--has-collection .cart__login-title {
   margin-top: 2.5rem;
-}
-
-.drawer.active .drawer__inner {
-  transform: translateX(0);
 }
 
 .drawer__header {
