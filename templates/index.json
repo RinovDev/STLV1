@@ -125,35 +125,27 @@
     "image_banner_caWmx4": {
       "type": "image-banner",
       "blocks": {
-        "heading_BKyXQM": {
-          "type": "heading",
-          "settings": {
-            "heading": "Bla bla bla",
-            "heading_size": "h1"
-          }
-        },
-        "text_fDWjFe": {
+        "text_cCn6xc": {
           "type": "text",
           "settings": {
-            "text": "STLV IS WAR - WAR IS STLV",
+            "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_BKyXQM",
-        "text_fDWjFe"
+        "text_cCn6xc"
       ],
       "settings": {
-        "our_custom_fonts": true,
-        "image": "shopify:\/\/shop_images\/2024-07-10_10.24.13.png",
+        "our_custom_fonts": false,
+        "image": "shopify:\/\/shop_images\/2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
@@ -162,16 +154,15 @@
     "rich_text_n9rmHY": {
       "type": "rich-text",
       "blocks": {
-        "heading_zFp6Qm": {
-          "type": "heading",
+        "text_CMp8yB": {
+          "type": "text",
           "settings": {
-            "heading": "OUR SOCIAL MEDIA",
-            "heading_size": "h2"
+            "text": "<p>ВРИВАЙСЯ ПІДПИСУЙСЯ В НАШЕ КОМЮНИТИ <\/p>"
           }
         }
       },
       "block_order": [
-        "heading_zFp6Qm"
+        "text_CMp8yB"
       ],
       "settings": {
         "our_custom_fonts": true,
