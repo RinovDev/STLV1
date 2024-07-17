@@ -48,13 +48,13 @@
       @font-face {
         font-family: "aAbsoluteEmpire";
         src: url("{{ 'aAbsoluteEmpire.woff' | asset_url }}") format("woff"),
-        url("{{ 'aAbsoluteEmpire.woff2' | asset_url }}") format("woff2")
+             url("{{ 'aAbsoluteEmpire.woff2' | asset_url }}") format("woff2");
       }
 
       @font-face {
        font-family: "Montserrat-ExtraBold";
        src: url("{{ 'Montserrat-ExtraBold.woff' | asset_url }}") format("woff"),
-       url("{{ 'Montserrat-ExtraBold.woff2' | asset_url }}") format("woff2")
+            url("{{ 'Montserrat-ExtraBold.woff2' | asset_url }}") format("woff2");
       }
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}

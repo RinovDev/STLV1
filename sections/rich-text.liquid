@@ -12,6 +12,11 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+   .custom_rich_h2{
+    color:black;
+    font-family: Montserrat-ExtraBold;
+    font-size:4rem;
+  }
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -22,7 +27,10 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               <h2
-                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="rich-text__heading rte inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
+                 {% if section.settings.our_custom_fonts %}
+                    custom_rich_h2
+                  {% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -103,6 +111,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+      {
+      "type": "checkbox",
+      "id": "our_custom_fonts",
+      "default": true,
+      "label": "Активувати кастомні шріфти"
+    },
     {
       "type": "select",
       "id": "desktop_content_position",
