@@ -32,7 +32,11 @@
   .custom_h2{
     font-family: aAbsoluteEmpire;
     font-size: 6rem;
-    color: #ffd837;
+    color:#ffd837;
+  }
+
+  .custom2_h2{
+
   }
 
   .custom_p{
@@ -156,6 +160,9 @@
               class="banner__heading inline-richtext {{ block.settings.heading_size }} 
               {% if section.settings.our_custom_fonts %}
               custom_h2
+              {% endif %}
+              {% if section.settings.our_custom_fonts2 %}
+              custom2_h2
               {% endif %}"
               "
               {{ block.shopify_attributes }}
@@ -219,6 +226,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "our_custom_fonts2",
+      "default": true,
+      "label": "Активувати кастомні шріфти 2"
+    },
     {
       "type": "checkbox",
       "id": "our_custom_fonts",
