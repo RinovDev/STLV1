@@ -71,27 +71,16 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>ОБИРАЙ СВІЙ ТОПОВИЙ ЛУК<\/p>"
-          }
-        },
-        "button_KkEekM": {
-          "type": "button",
-          "settings": {
-            "button_label": "ПРИДБАТИ",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>ОБИРАЙ СВОЮ НОВУ УЛЮБЛЕНУ РІЧ В ГАРДЕРОБІ <\/p>"
           }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "button_KkEekM"
+        "text"
       ],
       "settings": {
+        "our_custom_fonts": true,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-1",
@@ -185,6 +174,7 @@
         "heading_zFp6Qm"
       ],
       "settings": {
+        "our_custom_fonts": true,
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
