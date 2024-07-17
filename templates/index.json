@@ -30,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "ПРИДБАТИ",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify:\/\/collections\/stlv-prints",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -44,6 +44,7 @@
         "button"
       ],
       "settings": {
+        "our_custom_fonts2": true,
         "our_custom_fonts": true,
         "image": "shopify:\/\/shop_images\/cab30e0f8153b30a1103f1b1abd99082.png",
         "image_overlay_opacity": 0,
@@ -137,6 +138,7 @@
         "heading_9F7ta7"
       ],
       "settings": {
+        "our_custom_fonts2": true,
         "our_custom_fonts": true,
         "image": "shopify:\/\/shop_images\/2.jpg",
         "image_overlay_opacity": 0,
