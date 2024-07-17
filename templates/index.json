@@ -172,8 +172,8 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 32,
-        "padding_bottom": 32
+        "padding_top": 24,
+        "padding_bottom": 20
       }
     },
     "custom_catalog_wHdWk9": {
