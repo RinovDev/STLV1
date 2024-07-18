@@ -101,7 +101,8 @@
             "show_first_text": true,
             "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ ПРІНТИ",
             "show_first_button": true,
-            "first_paragraph_text": ""
+            "first_paragraph_text": "",
+            "first_button_url": "https:\/\/stlvclub.com\/pages\/прінти"
           }
         },
         "first_block_qcwNnP": {
@@ -112,7 +113,8 @@
             "show_first_text": true,
             "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ РЕЧІ",
             "show_first_button": true,
-            "first_paragraph_text": ""
+            "first_paragraph_text": "",
+            "first_button_url": "#"
           }
         }
       },
@@ -187,7 +189,8 @@
             "show_first_text": true,
             "first_button_text": "Перейти",
             "show_first_button": false,
-            "first_paragraph_text": "Переглянути наші речі"
+            "first_paragraph_text": "Переглянути наші речі",
+            "first_button_url": "#"
           }
         },
         "first_block_DrinHz": {
@@ -198,7 +201,8 @@
             "show_first_text": true,
             "first_button_text": "Перейти",
             "show_first_button": false,
-            "first_paragraph_text": "Переглянути наші речі"
+            "first_paragraph_text": "Переглянути наші речі",
+            "first_button_url": "#"
           }
         },
         "first_block_iKPDJc": {
@@ -209,7 +213,8 @@
             "show_first_text": true,
             "first_button_text": "Перейти",
             "show_first_button": false,
-            "first_paragraph_text": "Переглянути наші речі"
+            "first_paragraph_text": "Переглянути наші речі",
+            "first_button_url": "#"
           }
         }
       },
