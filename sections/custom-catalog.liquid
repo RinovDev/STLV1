@@ -20,7 +20,7 @@
         {
           "type": "checkbox",
           "id": "show_first_text",
-          "label": "Показать текст"
+          "label": "Показати текст"
         },
         {
           "type": "text",
@@ -31,13 +31,19 @@
         {
           "type": "checkbox",
           "id": "show_first_button",
-          "label": "Показать кнопку"
+          "label": "Показати кнопку"
         },
         {
           "type": "text",
           "id": "first_paragraph_text",
           "label": "First Paragraph Text",
           "default": "Переглянути наші речі"
+        },
+        {
+          "type": "text",
+          "id": "first_button_url",
+          "label": "First Button URL",
+          "default": "#"
         }
       ]
     }
@@ -51,17 +57,17 @@
 }
 {% endschema %}
 
+
+
 <style>
   .custom-catalog_container {
     display: flex;
-    flex-wrap:wrap;
-    
+    flex-wrap: wrap;
   }
  
   .custom-catalog_section {
     width: 100%;
-    margin-bottom:30px;
-    
+    margin-bottom: 30px;
   }
   .product-block {
     display: flex;
@@ -108,34 +114,33 @@
     margin: 0;
   }
   .button-wrapper button {
- 
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    background:#ffd837;
-    color:black;
+    background: #ffd837;
+    color: black;
     font-family: Montserrat-ExtraBold;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     transition: 0.5s ease;
   }
 
-  .button-wrapper button:hover{
-    transform: scale(1.01)
+  .button-wrapper button:hover {
+    transform: scale(1.01);
   }
 
-  .first_text{
-    position:absolute;
-    color:white;
+  .first_text {
+    position: absolute;
+    color: white;
     font-family: Montserrat-ExtraBold;
-    font-size:3.5rem;
+    font-size: 3.5rem;
   }
-  .custom-block{
-    margin-right:30px;
+  .custom-block {
+    margin-right: 30px;
     transition: 0.5s ease;
   }
 
-  .custom-block:hover{
-    transform:scale(1.01)
+  .custom-block:hover {
+    transform: scale(1.01);
   }
 </style>
 
@@ -150,7 +155,7 @@
           <div class="button-wrapper">
             {% if block.settings.show_first_button %}
               <p>{{ block.settings.first_paragraph_text }}</p>
-              <button>{{ block.settings.first_button_text }}</button>
+              <a href="{{ block.settings.first_button_url }}"><button>{{ block.settings.first_button_text }}</button></a>
             {% endif %}
           </div>
         </div>
