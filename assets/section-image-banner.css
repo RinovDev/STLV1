@@ -279,7 +279,7 @@
 
 @media screen and (min-width: 750px) {
   .banner__content {
-    padding: 5rem;
+   
   }
 
   .banner__content--top-left {
@@ -363,7 +363,7 @@
   .banner--desktop-transparent .banner__box {
     padding: 4rem 0;
     background: transparent;
-    max-width: 89rem;
+    max-width: 100rem;
     border: none;
     border-radius: 0;
     box-shadow: none;
