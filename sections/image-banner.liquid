@@ -29,6 +29,10 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
+  
+
+  
+
   .custom_h2{
     font-family: aAbsoluteEmpire;
     font-size: 6rem;
@@ -48,7 +52,7 @@
   .custom_button{
     background:#ffd837;
     color:black;
-    transition: 0.3s ease;
+    transition: 1s ease;
    
   }
 
@@ -62,6 +66,10 @@
     font-family: Montserrat-ExtraBold;
     font-size:3rem;
   }
+
+
+    
+  
 
   
 {%- endstyle -%}
@@ -163,9 +171,9 @@
               custom_h2
               {% endif %}
               {% if section.settings.our_custom_fonts2 %}
-              custom2_h2
+              custom_h2
               {% endif %}"
-              "
+              
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
@@ -227,12 +235,13 @@
     "groups": ["header", "footer"]
   },
   "settings": [
-    {
+     {
       "type": "checkbox",
       "id": "our_custom_fonts2",
       "default": false,
-      "label": "Активувати кастомні шріфти 2"
+      "label": "Активувати Warsuck"
     },
+    
     {
       "type": "checkbox",
       "id": "our_custom_fonts",
