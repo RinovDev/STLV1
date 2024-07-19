@@ -181,6 +181,11 @@
     "custom_catalog_wHdWk9": {
       "type": "custom-catalog",
       "blocks": {
+        "tiktok_video_3xCq9x": {
+          "type": "tiktok_video",
+          "settings": {
+          }
+        },
         "first_block_DrinHz": {
           "type": "first_block",
           "settings": {
@@ -204,17 +209,12 @@
             "first_paragraph_text": "Переглянути наші речі",
             "first_button_url": "#"
           }
-        },
-        "tiktok_video_3xCq9x": {
-          "type": "tiktok_video",
-          "settings": {
-          }
         }
       },
       "block_order": [
+        "tiktok_video_3xCq9x",
         "first_block_DrinHz",
-        "first_block_iKPDJc",
-        "tiktok_video_3xCq9x"
+        "first_block_iKPDJc"
       ],
       "settings": {
       }
