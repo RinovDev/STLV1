@@ -181,9 +181,16 @@
     "custom_catalog_wHdWk9": {
       "type": "custom-catalog",
       "blocks": {
-        "tiktok_video_PhmEM7": {
-          "type": "tiktok_video",
+        "first_block_ecAyWd": {
+          "type": "first_block",
           "settings": {
+            "first_image": "shopify:\/\/shop_images\/prints.jpg",
+            "first_text": "Your Text",
+            "show_first_text": true,
+            "first_button_text": "Перейти",
+            "show_first_button": false,
+            "first_paragraph_text": "Переглянути наші речі",
+            "first_button_url": "#"
           }
         },
         "first_block_DrinHz": {
@@ -212,7 +219,7 @@
         }
       },
       "block_order": [
-        "tiktok_video_PhmEM7",
+        "first_block_ecAyWd",
         "first_block_DrinHz",
         "first_block_iKPDJc"
       ],
