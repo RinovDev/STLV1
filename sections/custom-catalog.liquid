@@ -154,6 +154,7 @@
   <div class="page-width custom-catalog_container">
     {% for block in section.blocks %}
      {% case block.type %}
+     {%when 'first_block'%}
       <div class="product-block custom-block" style="background-image: url({{ block.settings.first_image | img_url: 'master' }});">
         {% if block.settings.show_first_text %}
           <h2 class="first_text">{{ block.settings.first_text }}</h2>
