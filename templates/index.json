@@ -185,36 +185,10 @@
           "type": "tiktok_video",
           "settings": {
           }
-        },
-        "first_block_DrinHz": {
-          "type": "first_block",
-          "settings": {
-            "first_image": "shopify:\/\/shop_images\/prints.jpg",
-            "first_text": "Your Text",
-            "show_first_text": true,
-            "first_button_text": "Перейти",
-            "show_first_button": false,
-            "first_paragraph_text": "Переглянути наші речі",
-            "first_button_url": "#"
-          }
-        },
-        "first_block_iKPDJc": {
-          "type": "first_block",
-          "settings": {
-            "first_image": "shopify:\/\/shop_images\/prints.jpg",
-            "first_text": "Your Text",
-            "show_first_text": true,
-            "first_button_text": "Перейти",
-            "show_first_button": false,
-            "first_paragraph_text": "Переглянути наші речі",
-            "first_button_url": "#"
-          }
         }
       },
       "block_order": [
-        "tiktok_video_ijWFgP",
-        "first_block_DrinHz",
-        "first_block_iKPDJc"
+        "tiktok_video_ijWFgP"
       ],
       "settings": {
       }
