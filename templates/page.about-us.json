@@ -16,16 +16,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "test_form_fxfG3h": {
-      "type": "test-form",
-      "settings": {
-        "heading": "Contact Us"
-      }
     }
   },
   "order": [
-    "main",
-    "test_form_fxfG3h"
+    "main"
   ]
 }
