@@ -22,6 +22,10 @@
     border:none;
   }
 
+  .collection-hero__image-container img{
+    object-fit:contain;
+  }
+
   .prints-title{
     display:flex;
     justify-content:center;
@@ -52,6 +56,7 @@
             alt="{{ collection.image.alt | escape }}"
             width="{{ collection.image.width }}"
             height="{{ collection.image.height }}"
+            
           >
         </div>
       {%- endif -%}
