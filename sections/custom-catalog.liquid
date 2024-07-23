@@ -3,6 +3,11 @@
   "name": "Custom Header",
   "blocks": [
     {
+      "type": "tg",
+      "name": "tg",
+      "settings": []  
+    },
+    {
       "type": "instagram-video",
       "name": "instagram-video",
       "settings": []  
@@ -188,6 +193,8 @@
         {%render 'tiktok-video'%}
       {%when 'instagram-video'%}
         {%render 'instagram'%}
+      {%when 'tg'%}
+        {%render 'tg'%}
       {% endcase %}
       
     {% endfor %}
