@@ -17,20 +17,20 @@
         "padding_bottom": 28
       }
     },
-    "custom_text_RfnArN": {
+    "custom_text_MPEDN6": {
       "type": "Custom-text",
       "blocks": {
-        "content_block_XBUUa8": {
+        "content_block_MB87UQ": {
           "type": "content_block",
           "settings": {
-            "heading_type": "h1",
-            "heading_text": "asdasdasdasdasd",
-            "paragraph_text": "aslkdfjalkfjaklsdjflkasdjflkajdflkajdflkajlaksdfkladjflkasjdflkajsdfklajdflkjaflkjaflkjaslkfjaldkfjalkdfjaklfjlkajflkadjflkasdjflkasdjflkasdjflkasdjf"
+            "heading_type": "h2",
+            "heading_text": "ОБМІН ТА ПОВЕРНЕННЯ",
+            "paragraph_text": "Обмін та повернення можливі протягом 14 календарних днів після отримання замовлення при наявності усіх бірок та належному стані товару.\nПри поверненні та обміні товару через причини, не пов’язані з ушкодженням в наслідок доставки чи неналежною якістю, браком товару, доставка оплачується покупцем.\n<br><br>\nКошти повертаються протягом 7-ми робочих днів після отримання нами повернення."
           }
         }
       },
       "block_order": [
-        "content_block_XBUUa8"
+        "content_block_MB87UQ"
       ],
       "settings": {
       }
@@ -38,6 +38,6 @@
   },
   "order": [
     "main",
-    "custom_text_RfnArN"
+    "custom_text_MPEDN6"
   ]
 }
