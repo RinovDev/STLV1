@@ -168,19 +168,22 @@
     {% for block in section.blocks %}
      {% case block.type %}
      {%when 'first_block'%}
-      <div class="product-block custom-block" style="background-image: url({{ block.settings.first_image | img_url: 'master' }});">
-        {% if block.settings.show_first_text %}
-          <h2 class="first_text">{{ block.settings.first_text }}</h2>
-        {% endif %}
-        <div class="product-block-content">
-          <div class="button-wrapper">
-            {% if block.settings.show_first_button %}
-              <p>{{ block.settings.first_paragraph_text }}</p>
-              <a href="{{ block.settings.first_button_url }}"><button>{{ block.settings.first_button_text }}</button></a>
-            {% endif %}
+      <a href="{{ block.settings.first_button_url }}" class="product-block-link" style="width:49%">
+        <div class="product-block custom-block" style="background-image: url({{ block.settings.first_image | img_url: 'master' }});">
+          {% if block.settings.show_first_text %}
+            <h2 class="first_text">{{ block.settings.first_text }}</h2>
+          {% endif %}
+          <div class="product-block-content">
+            <div class="button-wrapper">
+              {% if block.settings.show_first_button %}
+                <p>{{ block.settings.first_paragraph_text }}</p>
+                <button>{{ block.settings.first_button_text }}</button>
+              {% endif %}
+            </div>
           </div>
         </div>
-      </div>
+      </a>
+      
       {%when 'tiktok_video'%}
         {%render 'tiktok-video'%}
       {%when 'instagram-video'%}
