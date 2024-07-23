@@ -3,6 +3,11 @@
   "name": "Custom Header",
   "blocks": [
     {
+      "type": "instagram-video",
+      "name": "instagram-video",
+      "settings": []  
+    },
+    {
       "type": "tiktok_video",
       "name": "TikTok Video",
       "settings": []  
@@ -178,7 +183,10 @@
       </div>
       {%when 'tiktok_video'%}
         {%render 'tiktok-video'%}
+      {%when 'instagram-video'%}
+        {%render 'instagram'%}
       {% endcase %}
+      
     {% endfor %}
   </div>
 </div>
