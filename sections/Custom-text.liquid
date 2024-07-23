@@ -38,7 +38,7 @@
     ],
     "presets": [
       {
-        "name": "Cu",
+        "name": "STLV text",
         "category": "Custom"
       }
     ]
@@ -47,7 +47,7 @@
   
   <div class="page-width">
     {% for block in section.blocks %}
-      <div class="custom-block">
+      <div class="custom-block scroll-trigger animate--slide-in">
         {% if block.settings.heading_text != blank %}
           <{{ block.settings.heading_type }}>{{ block.settings.heading_text }}</{{ block.settings.heading_type }}>
         {% endif %}
