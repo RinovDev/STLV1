@@ -181,6 +181,11 @@
     "custom_catalog_wHdWk9": {
       "type": "custom-catalog",
       "blocks": {
+        "instagram_video_QcT9B7": {
+          "type": "instagram-video",
+          "settings": {
+          }
+        },
         "tiktok_video_ijWFgP": {
           "type": "tiktok_video",
           "settings": {
@@ -188,6 +193,7 @@
         }
       },
       "block_order": [
+        "instagram_video_QcT9B7",
         "tiktok_video_ijWFgP"
       ],
       "settings": {
