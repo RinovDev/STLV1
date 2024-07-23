@@ -1,0 +1,97 @@
+{% schema %}
+  {
+    "name": "Custom Upload Form",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Contact Us"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Default"
+      }
+    ]
+  }
+  {% endschema %}
+  
+  {% style %}
+  <style>
+    .contact-form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contact-form label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    .contact-form input[type="file"] {
+      margin-bottom: 15px;
+    }
+  
+    .contact-form button {
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  {% endstyle %}
+  
+
+  <div class="contact-form-container">
+    <h2>{{ section.settings.heading }}</h2>
+    <form class="contact-form" action="https://example.com/upload" method="POST" enctype="multipart/form-data">
+      <label for="field1">Field 1:</label>
+      <input type="text" id="field1" name="field1" required>
+  
+      <label for="field2">Field 2:</label>
+      <input type="text" id="field2" name="field2" required>
+  
+      <label for="field3">Field 3:</label>
+      <input type="text" id="field3" name="field3" required>
+  
+      <label for="field4">Field 4:</label>
+      <input type="text" id="field4" name="field4" required>
+  
+      <label for="field5">Field 5:</label>
+      <input type="text" id="field5" name="field5" required>
+  
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" name="image[]" accept="image/png, image/jpeg" multiple required>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  
