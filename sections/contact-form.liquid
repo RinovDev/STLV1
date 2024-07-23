@@ -45,7 +45,7 @@
 </style>
 
 <div class="page-width">
-  <div class="contact-section">
+  <div class="contact-section scroll-trigger animate--slide-in">
     <div class="contact-info">
       <h3>{{ section.settings.address_title }}</h3>
       <p>{{ section.settings.address }}</p>
@@ -55,7 +55,7 @@
       <p>{{ section.settings.email }}</p>
     </div>
 
-    <div class="contact-form">
+    <div class="contact-form scroll-trigger animate--slide-in">
       <h3>{{ section.settings.form_title }}</h3>
       {%- form 'contact', id: 'ContactForm' -%}
         <div class="field">
@@ -78,7 +78,7 @@
           >
           <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }}</label>
         </div>
-        <div class="field comment" style = " height:30rem;">
+        <div class="field comment" style = " height:20rem;">
           <textarea
             class="field__input"
             rows="10"
