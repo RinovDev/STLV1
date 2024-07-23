@@ -190,17 +190,11 @@
           "type": "tiktok_video",
           "settings": {
           }
-        },
-        "tg_qQ78Er": {
-          "type": "tg",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "instagram_video_QcT9B7",
-        "tiktok_video_ijWFgP",
-        "tg_qQ78Er"
+        "tiktok_video_ijWFgP"
       ],
       "settings": {
       }
