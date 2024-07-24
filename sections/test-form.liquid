@@ -1,23 +1,85 @@
 {% schema %}
   {
-    "name": "Custom Upload Form",
-    "settings": [
+    "name": "Dynamic Contact Form",
+    "settings": [],
+    "blocks": [
       {
         "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "Contact Us"
+        "name": "Text Field",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label",
+            "default": "Text Field"
+          },
+          {
+            "type": "text",
+            "id": "id",
+            "label": "Field ID",
+            "default": "text_field"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "name": "Image Upload",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Label",
+            "default": "Upload Image"
+          },
+          {
+            "type": "text",
+            "id": "id",
+            "label": "Field ID",
+            "default": "image_field"
+          }
+        ]
       }
     ],
     "presets": [
       {
-        "name": "Default"
+        "name": "Default",
+        "category": "Custom Forms"
       }
     ]
   }
   {% endschema %}
+
+<div class="contact-form-container">
+  <h2>Contact Us</h2>
+  <form class="contact-form-server" action="http://localhost:3001/upload" method="POST" enctype="multipart/form-data">
+    {% for block in section.blocks %}
+      {% if block.type == 'text_field' %}
+        <label for="text_{{ block.id }}">{{ block.settings.label }}</label>
+        <input type="text" id="text_{{ block.id }}" name="text_{{ block.id }}" required>
+      {% elsif block.type == 'image_field' %}
+        <label for="image_{{ block.id }}">{{ block.settings.label }}</label>
+        <input type="file" id="image_{{ block.id }}" name="images[]" accept="image/png, image/jpeg" multiple required>
+      {% endif %}
+    {% endfor %}
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form-server');
+    const inputs = form.querySelectorAll('input[type="text"], input[type="file"]');
+    inputs.forEach(input => {
+      const newId = input.id + '_' + Date.now() + Math.random().toString(36).substr(2, 9);
+      const label = form.querySelector('label[for="' + input.id + '"]');
+      if (label) {
+        label.htmlFor = newId;
+      }
+      input.id = newId;
+    });
+  });
+</script>
   
-  {% style %}
   <style>
     .contact-form-container {
       max-width: 600px;
@@ -27,31 +89,25 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-  
     .contact-form {
       display: flex;
       flex-direction: column;
     }
-  
+    .contact-form .form-field {
+      margin-bottom: 15px;
+    }
     .contact-form label {
       margin-bottom: 5px;
       font-weight: bold;
     }
-  
     .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
+    .contact-form input[type="file"] {
       margin-bottom: 15px;
       padding: 10px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-  
-    .contact-form input[type="file"] {
-      margin-bottom: 15px;
-    }
-  
     .contact-form button {
       padding: 10px 20px;
       font-size: 18px;
@@ -61,37 +117,8 @@
       border-radius: 5px;
       cursor: pointer;
     }
-  
     .contact-form button:hover {
       background-color: #0056b3;
     }
   </style>
-  {% endstyle %}
-  
-
-  <div class="contact-form-container">
-    <h2>{{ section.settings.heading }}</h2>
-    <form class="contact-form" action="https://example.com/upload" method="POST" enctype="multipart/form-data">
-      <label for="field1">Field 1:</label>
-      <input type="text" id="field1" name="field1" required>
-  
-      <label for="field2">Field 2:</label>
-      <input type="text" id="field2" name="field2" required>
-  
-      <label for="field3">Field 3:</label>
-      <input type="text" id="field3" name="field3" required>
-  
-      <label for="field4">Field 4:</label>
-      <input type="text" id="field4" name="field4" required>
-  
-      <label for="field5">Field 5:</label>
-      <input type="text" id="field5" name="field5" required>
-  
-      <label for="image">Upload Image:</label>
-      <input type="file" id="image" name="image[]" accept="image/png, image/jpeg" multiple required>
-  
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-
   
