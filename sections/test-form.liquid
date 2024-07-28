@@ -1,41 +1,36 @@
 {% schema %}
   {
-    "name": "Dynamic Contact Form",
+    "name": "Dynamic Form",
     "settings": [],
     "blocks": [
       {
-        "type": "text",
-        "name": "Text Field",
+        "type": "field",
+        "name": "Field",
         "settings": [
           {
             "type": "text",
             "id": "label",
-            "label": "Label",
-            "default": "Text Field"
+            "label": "Field Label",
+            "default": "Field Label"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_header",
+            "label": "Show Header",
+            "default": false
           },
           {
             "type": "text",
-            "id": "id",
-            "label": "Field ID",
-            "default": "text_field"
-          }
-        ]
-      },
-      {
-        "type": "image",
-        "name": "Image Upload",
-        "settings": [
-          {
-            "type": "text",
-            "id": "label",
-            "label": "Label",
-            "default": "Upload Image"
+            "id": "header_text",
+            "label": "Header Text",
+            "default": "Header",
+            "info": "Text for the header if Show Header is checked"
           },
           {
-            "type": "text",
-            "id": "id",
-            "label": "Field ID",
-            "default": "image_field"
+            "type": "checkbox",
+            "id": "show_upload",
+            "label": "Show Upload image",
+            "default": false
           }
         ]
       }
@@ -43,82 +38,61 @@
     "presets": [
       {
         "name": "Default",
-        "category": "Custom Forms"
+        "category": "Custom"
       }
     ]
   }
-  {% endschema %}
+{% endschema %}
 
-<div class="contact-form-container">
-  <h2>Contact Us</h2>
-  <form class="contact-form-server" action="http://localhost:3001/upload" method="POST" enctype="multipart/form-data">
-    {% for block in section.blocks %}
-      {% if block.type == 'text_field' %}
-        <label for="text_{{ block.id }}">{{ block.settings.label }}</label>
-        <input type="text" id="text_{{ block.id }}" name="text_{{ block.id }}" required>
-      {% elsif block.type == 'image_field' %}
-        <label for="image_{{ block.id }}">{{ block.settings.label }}</label>
-        <input type="file" id="image_{{ block.id }}" name="images[]" accept="image/png, image/jpeg" multiple required>
-      {% endif %}
-    {% endfor %}
-    <button type="submit">Submit</button>
-  </form>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.contact-form-server');
-    const inputs = form.querySelectorAll('input[type="text"], input[type="file"]');
-    inputs.forEach(input => {
-      const newId = input.id + '_' + Date.now() + Math.random().toString(36).substr(2, 9);
-      const label = form.querySelector('label[for="' + input.id + '"]');
-      if (label) {
-        label.htmlFor = newId;
-      }
-      input.id = newId;
-    });
-  });
-</script>
   
-  <style>
-    .contact-form-container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-    }
-    .contact-form .form-field {
-      margin-bottom: 15px;
-    }
-    .contact-form label {
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    .contact-form input[type="text"],
-    .contact-form input[type="file"] {
-      margin-bottom: 15px;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .contact-form button {
-      padding: 10px 20px;
-      font-size: 18px;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .contact-form button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  
+  <form class = "page-width server-form" action="http://localhost:3001/upload" method="post" enctype="multipart/form-data">
+  {% assign fieldNumber = 1 %}
+  {% for block in section.blocks %}
+    <div >
+      {% if block.settings.show_header %}
+        <h3>{{ block.settings.header_text }}</h3>
+      {% endif %}
+
+      <input type="hidden" name="header_{{ fieldNumber }}" value="{{ block.settings.header_text }}">
+      <label for="{{ fieldNumber }}"></label>
+      <textarea id="{{ fieldNumber }}" name="{{ fieldNumber }}" rows="3" cols="50"></textarea>
+
+      {% if block.settings.show_upload %}
+        <input type="file" name="image_position_{{ fieldNumber }}[]" accept=".png,.jpg,.jpeg,.DNG,.HEIC" multiple>
+      {% endif %}
+    </div>
+    {% assign fieldNumber = fieldNumber | plus: 1 %}
+  {% endfor %}
+  
+  <button class = "form-btn" type="submit">SUBMIT</button>
+</form>
+
+<style>
+  .form-btn{
+    min-width: 38.6%;
+    height:4rem;
+    font-size:3rem;
+    font-weight: 100;
+    border:none;
+    background:gray;
+    color:white;
+    cursor: pointer;
+  }
+  .form-btn:hover{
+    background:rgb(67, 66, 66);
+  }
+  .server-form input[type="text"]{
+    margin-top:1rem;
+    min-width: 30%;
+    min-height:5rem;
+    
+  }
+  .server-form input[type="file"]{
+    width: 30%;
+    cursor: pointer;
+    
+  }
+</style>
+
   
