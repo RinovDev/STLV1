@@ -9,7 +9,7 @@
 */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/b839bfd68658d8768f602b5e214f5587.png",
+    "logo": "shopify:\/\/shop_images\/88b9ad7aeb54ee88c1c922d86e1717dc_5c740bce-a5ba-430e-857d-3118f42ae122.png",
     "logo_width": 80,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
@@ -44,7 +44,7 @@
     "card_style": "standard",
     "card_image_padding": 0,
     "card_text_alignment": "left",
-    "card_color_scheme": "scheme-2",
+    "card_color_scheme": "scheme-4",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
     "card_corner_radius": 0,
@@ -105,7 +105,7 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "brand_image": "shopify:\/\/shop_images\/b839bfd68658d8768f602b5e214f5587.png",
+    "brand_image": "shopify:\/\/shop_images\/88b9ad7aeb54ee88c1c922d86e1717dc_5c740bce-a5ba-430e-857d-3118f42ae122.png",
     "social_facebook_link": "",
     "social_instagram_link": "https:\/\/www.instagram.com\/stlv.club\/",
     "social_youtube_link": "",
@@ -123,6 +123,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "cart_color_scheme": "scheme-4",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",

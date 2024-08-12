@@ -1,5 +1,6 @@
 {{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
 
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -12,16 +13,43 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  
    .custom_rich_h2{
-    color:black;
-    font-family: Montserrat-ExtraBold;
-    font-size:4rem;
+    color: white;
+    font-family: Unbounded;
+    font-size:2.5rem;
+    margin-bottom:0.5em;
+  }
+
+  .custom_rich_p2 {
+  font-family: Roboto Mono;
+  position: relative; /* Для использования относительного позиционирования */
+  padding-bottom: 20px; /* Добавляем отступ, чтобы полоска не перекрывала текст */
+}
+
+.custom_rich_p2::after {
+  content: ""; /* Пустой контент для создания полоски */
+  display: block;
+  background: yellow; /* Цвет полоски */
+  width: 20%; /* Ширина полоски - в два раза меньше полной ширины */
+  height: 2px; /* Высота полоски - в два раза меньше предыдущей высоты */
+  position: absolute; /* Абсолютное позиционирование */
+  bottom: 0; /* Расположение внизу элемента */
+  left: 50%; /* Выравнивание по центру по горизонтали */
+  transform: translateX(-50%); /* Центрирование полоски относительно её ширины */
+}
+
+
+@media screen and (max-width: 750px) {
+  .custom_rich_h2{
+    font-size:1em;
   }
 
   .custom_rich_p2{
-    letter-spacing: 0.8rem;
-
+    font-size:0.7em;
   }
+}
+
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -68,12 +96,16 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-              {% if section.settings.our_custom_fonts %}
-                     <p style ="letter-spacing:0.8rem;">ЗАЛІТАЙ ДО НАС В СОЦ МЕРЕЖІ</p>
-                    {%else%}
-                     <p>{{ block.settings.text }}</p>
-                  {% endif %}
+            {% when 'p_text' %}
+                     <p class ="custom_rich_p2 scroll-trigger animate--slide-in ">{{ block.settings.p_text }}</p>
+                     
+                   
               </div>
+
+        
+
+            
+           
             {%- when 'button' -%}
               <div
                 class="rich-text__buttons{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -209,6 +241,19 @@
     }
   ],
   "blocks": [
+    {
+      "type": "p_text",
+      "name": "p_text",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "p_text",
+          "default": "asdasdasd",
+          "label": "type text"
+        }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.rich-text.blocks.heading.name",

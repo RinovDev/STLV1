@@ -37,7 +37,7 @@
     ],
     "presets": [
       {
-        "name": "Default",
+        "name": "Server-form",
         "category": "Custom"
       }
     ]
@@ -51,15 +51,15 @@
   {% for block in section.blocks %}
     <div >
       {% if block.settings.show_header %}
-        <h3>{{ block.settings.header_text }}</h3>
+        <h2 class ="server-form__header">{{ block.settings.header_text }}</h2>
       {% endif %}
 
       <input type="hidden" name="header_{{ fieldNumber }}" value="{{ block.settings.header_text }}">
       <label for="{{ fieldNumber }}"></label>
-      <textarea id="{{ fieldNumber }}" name="{{ fieldNumber }}" rows="3" cols="50"></textarea>
+      <textarea id="{{ fieldNumber }}" name="{{ fieldNumber }}" rows="3" cols="39" required></textarea>
 
       {% if block.settings.show_upload %}
-        <input type="file" name="image_position_{{ fieldNumber }}[]" accept=".png,.jpg,.jpeg,.DNG,.HEIC" multiple>
+        <input type="file" name="image_position_{{ fieldNumber }}[]" accept=".png,.jpg,.jpeg,.DNG,.HEIC" required multiple>
       {% endif %}
     </div>
     {% assign fieldNumber = fieldNumber | plus: 1 %}
@@ -69,8 +69,16 @@
 </form>
 
 <style>
+  .server-form__header{
+    max-width: 80%;
+  }
+  textarea{
+    font-size: 15px;
+    min-width: 36.33%;
+    
+  }
   .form-btn{
-    min-width: 38.6%;
+    min-width: 36.33%;
     height:4rem;
     font-size:3rem;
     font-weight: 100;
@@ -82,17 +90,24 @@
   .form-btn:hover{
     background:rgb(67, 66, 66);
   }
-  .server-form input[type="text"]{
-    margin-top:1rem;
-    min-width: 30%;
-    min-height:5rem;
+
+  @media (max-width: 768px) {
+    textarea{
+      font-size: 5px;
     
-  }
-  .server-form input[type="file"]{
-    width: 30%;
-    cursor: pointer;
-    
-  }
+    }
+
+    .form-btn {
+    }
+
+    @media (max-width: 400px){
+      .form-btn{
+        min-width: 45%;
+        margin-bottom: 5rem;
+      }
+    }
+}
+
 </style>
 
   

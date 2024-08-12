@@ -15,6 +15,14 @@
   .drawer {
     visibility: hidden;
   }
+
+  .cart__ctas button{
+    background:none;
+    box-shadow: none;
+    border: 1px solid;
+    font-family: Unbounded;
+    font-weight:100;
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">

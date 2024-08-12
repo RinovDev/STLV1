@@ -11,8 +11,13 @@
   }
 
   .section-{{ section.id }}-padding {
+    font-family: Unbounded;
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  .footer-block h2{
+    font-family: Unbounded;
   }
 
   @media screen and (min-width: 750px) {
@@ -24,6 +29,15 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
+
+  .stlv-social {
+    display:flex;
+    justify-content: flex-start;
+  }
+
+  .stlv-social ul{
+    padding:0;
   }
 {%- endstyle -%}
 
@@ -84,6 +98,13 @@
                     {% render block %}
                   {%- when 'text' -%}
                     <div class="footer-block__details-content rte">
+                      {%if block.settings.show_icon_in_block%}
+                        <div class="stlv-social">
+                          {%- render 'social-icons', class: 'footer__list-social' -%}
+                        </div>
+                 
+                      {%endif%}
+
                       {{ block.settings.subtext }}
                     </div>
                   {%- when 'link_list' -%}
@@ -341,6 +362,7 @@
       "type": "brand_information",
       "name": "t:sections.footer.blocks.brand_information.name",
       "settings": [
+      
         {
           "type": "paragraph",
           "content": "t:sections.footer.blocks.brand_information.settings.paragraph.content"
@@ -362,6 +384,14 @@
       "type": "text",
       "name": "t:sections.footer.blocks.text.name",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_icon_in_block",
+          "default": true,
+          "label": "Включить иконки социальных медиа"
+          
+
+        },
         {
           "type": "inline_richtext",
           "id": "heading",
