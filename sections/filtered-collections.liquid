@@ -164,6 +164,7 @@
     font-family: Unbounded;
   }
 </style>
+
 <div class="page-width all-collections-section scroll-trigger animate--slide-in">
   <div class="collection-filters">
     <h3 class="custom_h3">КАТЕГОРІЯ</h3>
@@ -179,22 +180,18 @@
     <div class="collection-items">
       {% for block in section.blocks %}
         {% if block.type == 'collection' and block.settings.add_collection %}
-          {% for i in (1..8) %}
-            {% capture collection_handle_key %}collection_{{ i }}{% endcapture %}
-            {% assign collection_handle = block.settings[collection_handle_key] %}
-            {% assign collection = collections[collection_handle] %}
-            {% if collection %}
-              <div class="collection-item visible" data-categories="{{ collection.metafields.filters.category }}">
-                <div class="prints-content">
-                  <a href="{{ collection.url }}" class="collection-link">
-                    <img src="{{ collection.image | image_url: width: 432, height: 550 }}" alt="image" class="print_img">
-                    <h3>{{ collection.title }}</h3>
-                    <button class="view-collection-button">ДЕТАЛЬНІШЕ</button>
-                  </a>
-                </div>
+          {% assign collection = collections[block.settings.collection.handle] %}
+          {% if collection %}
+            <div class="collection-item visible" data-categories="{{ collection.metafields.filters.category }}">
+              <div class="prints-content">
+                <a href="{{ collection.url }}" class="collection-link">
+                  <img src="{{ collection.image | image_url: width: 432, height: 550 }}" alt="image" class="print_img">
+                  <h3>{{ collection.title }}</h3>
+                  <button class="view-collection-button">ДЕТАЛЬНІШЕ</button>
+                </a>
               </div>
-            {% endif %}
-          {% endfor %}
+            </div>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </div>
@@ -242,71 +239,36 @@
         "default": "Our Collections"
       }
     ],
-    "blocks": [
+   "blocks": [
+  {
+    "type": "collection",
+    "name": "Collection",
+    "settings": [
       {
         "type": "collection",
-        "name": "Collection",
-        "settings": [
-          {
-            "type": "checkbox",
-            "id": "add_collection",
-            "label": "Добавить коллекцию",
-            "default": false
-          },
-          {
-            "type": "collection",
-            "id": "collection_1",
-            "label": "Select Collection 1"
-          },
-          {
-            "type": "collection",
-            "id": "collection_2",
-            "label": "Select Collection 2"
-          },
-          {
-            "type": "collection",
-            "id": "collection_3",
-            "label": "Select Collection 3"
-          },
-          {
-            "type": "collection",
-            "id": "collection_4",
-            "label": "Select Collection 4"
-          },
-          {
-            "type": "collection",
-            "id": "collection_5",
-            "label": "Select Collection 5"
-          },
-          {
-            "type": "collection",
-            "id": "collection_6",
-            "label": "Select Collection 6"
-          },
-          {
-            "type": "collection",
-            "id": "collection_7",
-            "label": "Select Collection 7"
-          },
-          {
-            "type": "collection",
-            "id": "collection_8",
-            "label": "Select Collection 8"
-          }
-        ]
+        "id": "collection",
+        "label": "Select Collection"
       },
       {
-        "type": "filter",
-        "name": "Filter",
-        "settings": [
-          {
-            "type": "text",
-            "id": "filter_name",
-            "label": "Filter Name"
-          }
-        ]
+        "type": "checkbox",
+        "id": "add_collection",
+        "label": "Добавить коллекцию",
+        "default": false
       }
-    ],
+    ]
+  },
+  {
+    "type": "filter",
+    "name": "Filter",
+    "settings": [
+      {
+        "type": "text",
+        "id": "filter_name",
+        "label": "Filter Name"
+      }
+    ]
+  }
+],
     "presets": [
       {
         "name": "Filtered Collections"
