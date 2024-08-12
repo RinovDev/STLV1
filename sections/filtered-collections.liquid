@@ -179,19 +179,27 @@
   <div class="prints-container">
     <div class="collection-items">
       {% for block in section.blocks %}
-        {% if block.type == 'collection' and block.settings.add_collection %}
-          {% assign collection = collections[block.settings.collection.handle] %}
-          {% if collection %}
-            <div class="collection-item visible" data-categories="{{ collection.metafields.filters.category }}">
-              <div class="prints-content">
-                <a href="{{ collection.url }}" class="collection-link">
-                  <img src="{{ collection.image | image_url: width: 432, height: 550 }}" alt="image" class="print_img">
-                  <h3>{{ collection.title }}</h3>
-                  <button class="view-collection-button">ДЕТАЛЬНІШЕ</button>
-                </a>
-              </div>
-            </div>
-          {% endif %}
+        {% if block.type == 'collection' %}
+          {% for i in (1..8) %}
+            {% capture collection_handle_key %}collection_{{ i }}{% endcapture %}
+            {% capture add_collection_key %}add_collection_{{ i }}{% endcapture %}
+            {% assign collection_handle = block.settings[collection_handle_key] %}
+            {% assign add_collection = block.settings[add_collection_key] %}
+            {% if collection_handle and add_collection %}
+              {% assign collection = collections[collection_handle] %}
+              {% if collection %}
+                <div class="collection-item visible" data-categories="{{ collection.metafields.filters.category }}">
+                  <div class="prints-content">
+                    <a href="{{ collection.url }}" class="collection-link">
+                      <img src="{{ collection.image | image_url: width: 432, height: 550 }}" alt="image" class="print_img">
+                      <h3>{{ collection.title }}</h3>
+                      <button class="view-collection-button">ДЕТАЛЬНІШЕ</button>
+                    </a>
+                  </div>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         {% endif %}
       {% endfor %}
     </div>
@@ -239,36 +247,114 @@
         "default": "Our Collections"
       }
     ],
-   "blocks": [
-  {
-    "type": "collection",
-    "name": "Collection",
-    "settings": [
-      {
-        "type": "collection",
-        "id": "collection",
-        "label": "Select Collection"
-      },
-      {
-        "type": "checkbox",
-        "id": "add_collection",
-        "label": "Добавить коллекцию",
-        "default": false
-      }
-    ]
-  },
-  {
-    "type": "filter",
-    "name": "Filter",
-    "settings": [
-      {
-        "type": "text",
-        "id": "filter_name",
-        "label": "Filter Name"
-      }
-    ]
-  }
-],
+    
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection_1",
+          "label": "Select Collection 1"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_1",
+          "label": "Добавить коллекцию 1",
+          "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection_2",
+          "label": "Select Collection 2"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_2",
+          "label": "Добавить коллекцию 2",
+          "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection_3",
+          "label": "Select Collection 3"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_3",
+          "label": "Добавить коллекцию 3",
+          "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection_4",
+          "label": "Select Collection 4"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_4",
+          "label": "Добавить коллекцию 4",
+          "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection_5",
+          "label": "Select Collection 5"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_5",
+          "label": "Добавить коллекцию 5",
+          "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection_6",
+          "label": "Select Collection 6"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_6",
+          "label": "Добавить коллекцию 6",
+          "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection_7",
+          "label": "Select Collection 7"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_7",
+          "label": "Добавить коллекцию 7",
+          "default": false
+        },
+        {
+          "type": "collection",
+          "id": "collection_8",
+          "label": "Select Collection 8"
+        },
+        {
+          "type": "checkbox",
+          "id": "add_collection_8",
+          "label": "Добавить коллекцию 8",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "filter",
+      "name": "Filter",
+      "settings": [
+        {
+          "type": "text",
+          "id": "filter_name",
+          "label": "Filter Name"
+        }
+      ]
+    }
+  ],
     "presets": [
       {
         "name": "Filtered Collections"
