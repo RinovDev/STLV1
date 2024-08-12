@@ -180,26 +180,16 @@
     <div class="collection-items">
       {% for block in section.blocks %}
         {% if block.type == 'collection' %}
-          {% assign collection1 = block.settings.collection_1 %}
-          {% assign collection2 = block.settings.collection_2 %}
-          {% assign collection3 = block.settings.collection_3 %}
-          {% assign collection4 = block.settings.collection_4 %}
-          {% assign collection5 = block.settings.collection_5 %}
-          {% assign collection6 = block.settings.collection_6 %}
-          {% assign collection7 = block.settings.collection_7 %}
-          {% assign collection8 = block.settings.collection_8 %}
-      
-          {% assign collections = collection1 | append: ',' | append: collection2 | append: ',' | append: collection3 | append: ',' | append: collection4 | append: ',' | append: collection5 | append: ',' | append: collection6 | append: ',' | append: collection7 | append: ',' | append: collection8 | split: ',' %}
-      
-          {% for collection in collections %}
+          {% for i in (1..8) %}
+            {% capture collection_handle_key %}collection_{{ i }}{% endcapture %}
+            {% assign collection_handle = block.settings[collection_handle_key] %}
+            {% assign collection = collections[collection_handle] %}
             {% if collection %}
-              {% assign current_collection = collections[forloop.index0] %}
-              {% assign category = current_collection.metafields.filters.category %}
-              <div class="collection-item visible" data-categories="{{ category }}">
+              <div class="collection-item visible" data-categories="{{ collection.metafields.filters.category }}">
                 <div class="prints-content">
-                  <a href="{{ current_collection.url }}" class="collection-link">
-                    <img src="{{ current_collection.image | image_url: width: 432, height: 550 }}" alt="image" class="print_img">
-                    <h3>{{ current_collection.title }}</h3>
+                  <a href="{{ collection.url }}" class="collection-link">
+                    <img src="{{ collection.image | image_url: width: 432, height: 550 }}" alt="image" class="print_img">
+                    <h3>{{ collection.title }}</h3>
                     <button class="view-collection-button">ДЕТАЛЬНІШЕ</button>
                   </a>
                 </div>
@@ -208,8 +198,6 @@
           {% endfor %}
         {% endif %}
       {% endfor %}
-      
-      
     </div>
   </div>
 </div>
@@ -321,4 +309,5 @@
     ]
   }
   {% endschema %}
+  
   
