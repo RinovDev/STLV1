@@ -660,6 +660,7 @@
         <!-- CTAs -->
 
         <div class="cart__ctas" {{ block.shopify_attributes }}>
+          <div id="error-message" class="error-message"></div>
           <button
             type="submit"
             id="CartDrawer-Checkout"
@@ -848,30 +849,28 @@ function highlightEmptyFields() {
 
 // Обработчик клика по кнопке оформления заказа
 document.getElementById('CartDrawer-Checkout').addEventListener('click', function(e) {
-  e.preventDefault(); // Предотвращаем стандартное поведение кнопки
+  e.preventDefault(); // Всегда предотвращаем стандартное поведение
 
   const { isValid, emptyFields } = checkFormValidity();
-  if (!isValid) {
+  if (isValid) {
+    const city = encodeURIComponent(document.getElementById('city').value);
+    const branch = encodeURIComponent(document.querySelector('.select-selected').textContent);
+    const firstName = encodeURIComponent(document.getElementById('first-name').value);
+    const lastName = encodeURIComponent(document.getElementById('last-name').value);
+    const email = encodeURIComponent(document.getElementById('email').value);
+    const phone = encodeURIComponent(document.getElementById('phone').value);
+
+    const checkoutUrl = `/checkout?checkout[shipping_address][city]=${city}&checkout[shipping_address][address1]=${branch}&checkout[shipping_address][first_name]=${firstName}&checkout[shipping_address][last_name]=${lastName}&checkout[email]=${email}&checkout[shipping_address][phone]=${phone}`;
+
+    console.log('Redirecting to:', checkoutUrl); // Добавьте эту строку для отладки
+    window.location.href = checkoutUrl;
+  } else {
     highlightEmptyFields();
     const firstEmptyField = document.querySelector('.input-error');
     if (firstEmptyField) {
       firstEmptyField.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
-    return; // Прерываем выполнение, если форма невалидна
   }
-
-  const city = encodeURIComponent(document.getElementById('city').value);
-  const branch = encodeURIComponent(document.querySelector('.select-selected').textContent);
-  const firstName = encodeURIComponent(document.getElementById('first-name').value);
-  const lastName = encodeURIComponent(document.getElementById('last-name').value);
-  const email = encodeURIComponent(document.getElementById('email').value);
-  const phone = encodeURIComponent(document.getElementById('phone').value);
-
-  // Формируем URL для чекаута с параметрами
-  const checkoutUrl = `/checkout?checkout[shipping_address][city]=${city}&checkout[shipping_address][address1]=${branch}&checkout[shipping_address][first_name]=${firstName}&checkout[shipping_address][last_name]=${lastName}&checkout[email]=${email}&checkout[shipping_address][phone]=${phone}`;
-
-  // Перенаправляем на чекаут
-  window.location.href = checkoutUrl;
 });
 
 // Добавляем обработчики событий для всех полей формы
