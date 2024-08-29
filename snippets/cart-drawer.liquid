@@ -786,6 +786,18 @@ suggestionsContainer.appendChild(suggestionElement);
 }
 }, 300));  // Задержка в 300 мс перед выполнением запроса
 
+document.addEventListener('DOMContentLoaded', function() {
+  const requiredElements = ['CartDrawer-Checkout', 'city', 'first-name', 'last-name', 'email', 'phone'];
+  requiredElements.forEach(id => {
+    if (!document.getElementById(id)) {
+      console.error(`Element with id "${id}" not found`);
+    }
+  });
+  if (!document.querySelector('.select-selected')) {
+    console.error('Element with class "select-selected" not found');
+  }
+});
+
 function checkFormValidity() {
   const fields = {
     'first-name': 'Імʼя',
