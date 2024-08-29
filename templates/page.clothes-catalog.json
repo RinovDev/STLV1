@@ -43,13 +43,41 @@
           "settings": {
             "collection": "худі-на-застібці"
           }
+        },
+        "featured_collection_RtfA8b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "шорти"
+          }
+        },
+        "featured_collection_WjX7Wp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "штани"
+          }
+        },
+        "featured_collection_Unw4mn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "кепки"
+          }
+        },
+        "featured_collection_RB6ejT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "прапори"
+          }
         }
       },
       "block_order": [
         "featured_collection_n7fJJE",
         "featured_collection_VQm3mE",
         "featured_collection_fKKzKN",
-        "featured_collection_G84YMt"
+        "featured_collection_G84YMt",
+        "featured_collection_RtfA8b",
+        "featured_collection_WjX7Wp",
+        "featured_collection_Unw4mn",
+        "featured_collection_RB6ejT"
       ],
       "settings": {
         "title": "",

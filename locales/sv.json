@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "general": {
     "password_page": {
@@ -188,8 +197,8 @@
       "clear_all": "Ta bort alla",
       "from": "Från",
       "filter_and_sort": "Filtrera och sortera",
-      "filter_by_label": "Filter:",
-      "filter_button": "Filter",
+      "filter_by_label": "Фільтер:",
+      "filter_button": "Фільтер",
       "filters_selected": {
         "one": "{{ count }} har valts",
         "other": "{{ count }} har valts"

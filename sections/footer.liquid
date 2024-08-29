@@ -39,6 +39,13 @@
   .stlv-social ul{
     padding:0;
   }
+  .stlv-social p {
+    font-size: 12px;
+  }
+
+  .cstm_p{
+    font-size:12px;
+  }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -105,7 +112,7 @@
                  
                       {%endif%}
 
-                      {{ block.settings.subtext }}
+                      <p class="cstm_p"> STLV.CLUB ⓒ 2024 </p>
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}

@@ -193,9 +193,9 @@
     },
     "facets": {
       "filter_and_operator_subtitle": "Match all",
-      "apply": "Apply",
+      "apply": "Підтвердити",
       "clear": "Clear",
-      "clear_all": "Remove all",
+      "clear_all": "Прибрати всі",
       "from": "From",
       "filter_and_sort": "Filter and sort",
       "filter_by_label": "Filter:",
@@ -213,8 +213,8 @@
         "other": "{{ product_count }} of {{ count }} products"
       },
       "product_count_simple": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} products"
+        "one": "{{ count }} реч",
+        "other": "{{ count }} речі"
       },
       "reset": "Reset",
       "sort_button": "Sort",
@@ -237,8 +237,8 @@
         "other": "{{ count }} suggestions"
       },
       "results_products_with_count": {
-        "one": "{{ count }} product",
-        "other": "{{ count }} products"
+        "one": "{{ count }} продукт",
+        "other": "{{ count }} продуктів"
       },
       "results_with_count": {
         "one": "{{ count }} result",
