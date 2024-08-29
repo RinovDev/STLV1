@@ -868,7 +868,7 @@ document.getElementById('CartDrawer-Checkout').addEventListener('click', functio
   const phone = encodeURIComponent(document.getElementById('phone').value);
 
   // Формируем URL для чекаута с параметрами
-  const checkoutUrl = `/checkout?checkout[shipping_address][city]=${city}&checkout[shipping_address][address1]=${branch}&checkout[shipping_address][firstName]=${firstName}&checkout[shipping_address][last_name]=${lastName}&checkout[email]=${email}&checkout[shipping_address][phone]=${phone}`;
+  const checkoutUrl = `/checkout?checkout[shipping_address][city]=${city}&checkout[shipping_address][address1]=${branch}&checkout[shipping_address][first_name]=${firstName}&checkout[shipping_address][last_name]=${lastName}&checkout[email]=${email}&checkout[shipping_address][phone]=${phone}`;
 
   // Перенаправляем на чекаут
   window.location.href = checkoutUrl;
