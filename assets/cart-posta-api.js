@@ -196,16 +196,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const cartDrawer = document.getElementById('CartDrawer');
   if (cartDrawer) {
     // Обработчик клика на кнопку Checkout
-    cartDrawer.addEventListener('click', async function(event) {
+    cartDrawer.addEventListener('click', function(event) {
       if (event.target && event.target.id === 'CartDrawer-Checkout') {
         event.preventDefault();
-        await handleCheckoutClick();
+        handleCheckoutClick();
       }
     });
   }
 
   // Обработчик клика на кнопку Checkout
-  async function handleCheckoutClick() {
+  function handleCheckoutClick() {
     const fields = {
       city: document.getElementById('city').value.trim(),
       branch: document.querySelector('.select-selected').textContent.trim(),
@@ -216,46 +216,35 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     let isValid = true;
+    let emptyFields = [];
 
     for (let [key, value] of Object.entries(fields)) {
       if (!value) {
         isValid = false;
+        emptyFields.push(key);
       }
     }
 
     if (isValid) {
-      // Создаем объект с атрибутами для корзины
-      const cartAttributes = {
-        '_delivery_city': fields.city,
-        '_delivery_branch': fields.branch,
-        '_delivery_first_name': fields.firstName,
-        '_delivery_last_name': fields.lastName,
-        '_delivery_phone': fields.phone,
-        '_delivery_zip': fields.zip
-      };
+      const params = new URLSearchParams({
+        'checkout[shipping_address][first_name]': fields.firstName,
+        'checkout[shipping_address][last_name]': fields.lastName,
+        'checkout[shipping_address][address1]': fields.branch,
+        'checkout[shipping_address][city]': fields.city,
+        'checkout[email]': fields.phone,
+        'checkout[shipping_address][postalCode]': fields.zip,
+       
+      });
+      
+      const checkoutUrl = `/checkout?${params.toString()}`;
+      console.log('checkoutUrl', checkoutUrl);
+      console.log('fields', fields);
+      console.log('params', params);
+      // Переход на страницу оформления заказа после небольшой задержки
+      setTimeout(() => {
+        window.location.href = checkoutUrl;
+      }, 2000);
 
-      try {
-        // Обновляем атрибуты корзины
-        const response = await fetch('/cart/update.js', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            attributes: cartAttributes
-          })
-        });
-
-        if (!response.ok) {
-          throw new Error('Не удалось обновить атрибуты корзины');
-        }
-
-        // Если обновление прошло успешно, переходим на страницу оформления заказа
-        window.location.href = '/checkout';
-      } catch (error) {
-        console.error('Ошибка при обновлении атрибутов корзины:', error);
-        // Здесь можно добавить обработку ошибки, например, показать сообщение пользователю
-      }
     } else {
       highlightEmptyFields(); // Подсветка пустых полей, если форма невалидна
     }
