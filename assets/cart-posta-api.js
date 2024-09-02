@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'checkout[shipping_address][address1]': fields.branch,
         'checkout[shipping_address][city]': fields.city,
         'checkout[email]': fields.phone,
-        'checkout[shipping_address][postalCode]': fields.zip,
+        'checkout[shipping_address][postal_code]': fields.zip,
        
       });
       
