@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'checkout[shipping_address][zip]': fields.zip,
       });
 
-      const checkoutUrl = `/checkout?${params.toString()}`;
+      const checkoutUrl = `https://stlvclub.com/checkouts/cn/Z2NwLWV1cm9wZS13ZXN0MTowMUo2UVhGSDhHR0RDWTRFRE1ZTjY1V1BNMQ?${params.toString()}`;
 
       // Отправка данных с помощью fetch и переход на страницу оформления заказа
       fetch(checkoutUrl, {
@@ -243,6 +243,10 @@ document.addEventListener('DOMContentLoaded', function() {
         credentials: 'same-origin',
         cache: 'no-cache',
         mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        }
       })
       .then(response => {
         if (response.ok) {
