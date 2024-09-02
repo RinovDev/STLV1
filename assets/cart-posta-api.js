@@ -232,18 +232,28 @@ document.addEventListener('DOMContentLoaded', function() {
         'checkout[shipping_address][address1]': fields.branch,
         'checkout[shipping_address][city]': fields.city,
         'checkout[email]': fields.phone,
-        'checkout[shipping_address][postal_code]': fields.zip,
-       
+        'checkout[shipping_address][zip]': fields.zip,
       });
-      
+
       const checkoutUrl = `/checkout?${params.toString()}`;
-      console.log('checkoutUrl', checkoutUrl);
-      console.log('fields', fields);
-      console.log('params', params);
-      // Переход на страницу оформления заказа после небольшой задержки
-      setTimeout(() => {
-        window.location.href = checkoutUrl;
-      }, 2000);
+
+      // Отправка данных с помощью fetch и переход на страницу оформления заказа
+      fetch(checkoutUrl, {
+        method: 'GET',
+        credentials: 'same-origin',
+        cache: 'no-cache',
+        mode: 'cors',
+      })
+      .then(response => {
+        if (response.ok) {
+          window.location.href = checkoutUrl;
+        } else {
+          throw new Error('Network response was not ok.');
+        }
+      })
+      .catch(error => {
+        console.error('There has been a problem with your fetch operation:', error);
+      });
 
     } else {
       highlightEmptyFields(); // Подсветка пустых полей, если форма невалидна
