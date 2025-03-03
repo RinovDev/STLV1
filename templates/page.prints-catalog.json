@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -26,14 +26,35 @@
             "filter_name": "STLV"
           }
         },
+        "collection_4zJMww": {
+          "type": "collection",
+          "settings": {
+            "collection_1": "",
+            "add_collection_1": false,
+            "collection_2": "",
+            "add_collection_2": false,
+            "collection_3": "",
+            "add_collection_3": false,
+            "collection_4": "",
+            "add_collection_4": false,
+            "collection_5": "",
+            "add_collection_5": false,
+            "collection_6": "",
+            "add_collection_6": false,
+            "collection_7": "night-is-not-only-for-love",
+            "add_collection_7": true,
+            "collection_8": "про-бана-молодість",
+            "add_collection_8": true
+          }
+        },
         "collection_aPXeeQ": {
           "type": "collection",
           "settings": {
-            "collection_1": "10-1",
+            "collection_1": "fortune-son",
             "add_collection_1": true,
-            "collection_2": "11-1",
+            "collection_2": "10-1",
             "add_collection_2": true,
-            "collection_3": "posadka-daddy",
+            "collection_3": "11-1",
             "add_collection_3": true,
             "collection_4": "5-1",
             "add_collection_4": true,
@@ -77,10 +98,10 @@
             "add_collection_2": true,
             "collection_3": "carpe-diem",
             "add_collection_3": true,
-            "collection_4": "",
-            "add_collection_4": false,
-            "collection_5": "",
-            "add_collection_5": false,
+            "collection_4": "mors-vincit-omnia",
+            "add_collection_4": true,
+            "collection_5": "posadka-daddy",
+            "add_collection_5": true,
             "collection_6": "",
             "add_collection_6": false,
             "collection_7": "",
@@ -93,6 +114,27 @@
           "type": "filter",
           "settings": {
             "filter_name": "SUNSET GOONS"
+          }
+        },
+        "collection_mRKDM4": {
+          "type": "collection",
+          "settings": {
+            "collection_1": "star-gazing-2-0",
+            "add_collection_1": true,
+            "collection_2": "for-the-boys-2-0",
+            "add_collection_2": true,
+            "collection_3": "fight-your-demons-2-0",
+            "add_collection_3": true,
+            "collection_4": "",
+            "add_collection_4": false,
+            "collection_5": "",
+            "add_collection_5": false,
+            "collection_6": "",
+            "add_collection_6": false,
+            "collection_7": "",
+            "add_collection_7": false,
+            "collection_8": "",
+            "add_collection_8": false
           }
         },
         "collection_4xWxFR": {
@@ -114,6 +156,48 @@
             "add_collection_7": true,
             "collection_8": "12",
             "add_collection_8": true
+          }
+        },
+        "collection_PAPmDN": {
+          "type": "collection",
+          "settings": {
+            "collection_1": "stay-rad",
+            "add_collection_1": true,
+            "collection_2": "siren",
+            "add_collection_2": true,
+            "collection_3": "reaper",
+            "add_collection_3": true,
+            "collection_4": "ride-the-lightning",
+            "add_collection_4": true,
+            "collection_5": "live-and-die",
+            "add_collection_5": true,
+            "collection_6": "got-comms",
+            "add_collection_6": true,
+            "collection_7": "end-of-an-era",
+            "add_collection_7": true,
+            "collection_8": "dont-get-dead",
+            "add_collection_8": true
+          }
+        },
+        "collection_VqdH9z": {
+          "type": "collection",
+          "settings": {
+            "collection_1": "death-never-waits",
+            "add_collection_1": true,
+            "collection_2": "check-on-your-homies",
+            "add_collection_2": true,
+            "collection_3": "the-crew",
+            "add_collection_3": true,
+            "collection_4": "",
+            "add_collection_4": false,
+            "collection_5": "",
+            "add_collection_5": false,
+            "collection_6": "",
+            "add_collection_6": false,
+            "collection_7": "",
+            "add_collection_7": false,
+            "collection_8": "",
+            "add_collection_8": false
           }
         },
         "collection_9VCinf": {
@@ -154,14 +238,35 @@
             "add_collection_6": true,
             "collection_7": "3",
             "add_collection_7": true,
-            "collection_8": "sunset-goons",
-            "add_collection_8": true
+            "collection_8": "",
+            "add_collection_8": false
           }
         },
         "filter_KnxGTM": {
           "type": "filter",
           "settings": {
             "filter_name": "FUN"
+          }
+        },
+        "collection_E6FcrY": {
+          "type": "collection",
+          "settings": {
+            "collection_1": "one-shot",
+            "add_collection_1": true,
+            "collection_2": "onlyguns",
+            "add_collection_2": true,
+            "collection_3": "пятерочка",
+            "add_collection_3": true,
+            "collection_4": "",
+            "add_collection_4": false,
+            "collection_5": "",
+            "add_collection_5": false,
+            "collection_6": "",
+            "add_collection_6": false,
+            "collection_7": "",
+            "add_collection_7": false,
+            "collection_8": "",
+            "add_collection_8": false
           }
         },
         "collection_RLhkV3": {
@@ -177,33 +282,12 @@
             "add_collection_4": true,
             "collection_5": "той-хто-йде",
             "add_collection_5": true,
-            "collection_6": "молитва-fpv",
-            "add_collection_6": false,
+            "collection_6": "120-ка",
+            "add_collection_6": true,
             "collection_7": "молодість-окопам",
             "add_collection_7": true,
             "collection_8": "дамбіл-бамбас",
             "add_collection_8": true
-          }
-        },
-        "collection_E6FcrY": {
-          "type": "collection",
-          "settings": {
-            "collection_1": "one-shot",
-            "add_collection_1": true,
-            "collection_2": "onlyguns",
-            "add_collection_2": true,
-            "collection_3": "",
-            "add_collection_3": false,
-            "collection_4": "",
-            "add_collection_4": false,
-            "collection_5": "",
-            "add_collection_5": false,
-            "collection_6": "",
-            "add_collection_6": false,
-            "collection_7": "",
-            "add_collection_7": false,
-            "collection_8": "",
-            "add_collection_8": false
           }
         },
         "filter_BEt8Ey": {
@@ -404,16 +488,20 @@
       },
       "block_order": [
         "filter_UyL9yb",
+        "collection_4zJMww",
         "collection_aPXeeQ",
         "collection_bJX9BX",
         "collection_EKEwkt",
         "filter_zGYLPV",
+        "collection_mRKDM4",
         "collection_4xWxFR",
+        "collection_PAPmDN",
+        "collection_VqdH9z",
         "collection_9VCinf",
         "collection_HRTweC",
         "filter_KnxGTM",
-        "collection_RLhkV3",
         "collection_E6FcrY",
+        "collection_RLhkV3",
         "filter_BEt8Ey",
         "collection_nNBcG7",
         "collection_JQpRp9",

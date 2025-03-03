@@ -29,15 +29,15 @@
   {% endschema %}
 <style>
   .social-media-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Использование Grid для распределения блоков */
-    gap: 5px; /* Установка отступа между блоками */
-    
+    gap: 3rem; /* Установка отступа между блоками */
     margin-bottom:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .social-media-block {
-    max-width: 30px;
     text-align: center;
     box-sizing: border-box; /* Учет отступов и границ внутри блока */
     transition: transform 0.3s ease;

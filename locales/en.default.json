@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin language editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -115,8 +115,8 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "ДОДАТИ В КОРЗИНУ",
-      "choose_options": "ДОДАТИ В КОРЗИНУ",
+      "add_to_cart": "ДОДАТИ В КОШИК",
+      "choose_options": "ДОДАТИ В КОШИК",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
       "inventory_in_stock": "In stock",
@@ -248,7 +248,7 @@
         "one": "{{ count }} result found for “{{ terms }}”",
         "other": "{{ count }} results found for “{{ terms }}”"
       },
-      "title": "Search results",
+      "title": "",
       "search_for": "Search for “{{ terms }}”",
       "suggestions": "Suggestions",
       "pages": "Pages"
@@ -290,14 +290,14 @@
       }
     },
     "cart": {
-      "title": "Корзина",
-      "caption": "Товари в корзині",
+      "title": "Кошик",
+      "caption": "Товари в кошику",
       "remove_title": "Видалити {{ title }}",
       "estimated_total": "Оцінка загальної суми",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
       "checkout": "Придбати",
-      "empty": "Ваша корзина пуста",
+      "empty": "Ваш кошик пустий",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Duties and taxes included. Discounts and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout.",
@@ -565,7 +565,8 @@
       },
       "shipping": {
         "shipping_method_title": "Доставка",
-        "free_rate_label": "За тарифами НП"
+        "free_rate_label": "За тарифами НП",
+        "delivery_title": "Доставка"
       },
       "payment": {
         "title": "Оплата",

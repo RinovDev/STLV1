@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -15,23 +15,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "HELL FROM THE SKY",
-            "heading_size": "h0"
+            "heading": "NIGHT IS NOT ONLY FOR LOVE",
+            "heading_size": "hxl"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "paragraph_text": "\"Пекло з небес\" в колаборації з підрозділом \"Гострі Картузи\"<br>\nприбуток з цього принта піде хлопцям на закупівлю FPV",
+            "paragraph_text": "Колаборація STLV CLUB з 20 полком К-2 <br>\nта українською компанією SkyFall виробником гексакоптерів \"Vampire\" <br>\nПрибуток з цього принта піде хлопцям на закупівлю скидів для дронів.",
             "text": "",
-            "text_style": "subtitle"
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
             "button_label_1": "ПРИДБАТИ",
-            "button_link_1": "shopify:\/\/collections\/1",
+            "button_link_1": "shopify:\/\/collections\/night-is-not-only-for-love",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -44,10 +44,11 @@
         "text",
         "button"
       ],
+      "custom_css": [],
       "settings": {
-        "our_custom_fonts2": false,
+        "our_custom_fonts2": true,
         "our_custom_fonts": true,
-        "image": "shopify:\/\/shop_images\/cab30e0f8153b30a1103f1b1abd99082.png",
+        "image": "shopify:\/\/shop_images\/2_1255297b-7dde-4766-8b9d-af5211473472.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -97,7 +98,7 @@
         "first_block_Xpgmm9": {
           "type": "first_block",
           "settings": {
-            "first_image": "shopify:\/\/shop_images\/7595ecabd1de49f46fabb7284ca3a07d.jpg",
+            "first_image": "shopify:\/\/shop_images\/2_d957ebcd-9109-4fc2-8f54-01684daad242.jpg",
             "first_text": "ПРИНТИ",
             "show_first_text": true,
             "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ ПРІНТИ",
@@ -109,7 +110,7 @@
         "first_block_qcwNnP": {
           "type": "first_block",
           "settings": {
-            "first_image": "shopify:\/\/shop_images\/d97ce189598b80d078a4def0ef9be7c9.jpg",
+            "first_image": "shopify:\/\/shop_images\/d97ce189598b80d078a4def0ef9be7c9_0dec6be1-74bc-45a6-8315-e4c3178470d0.jpg",
             "first_text": "РЕЧІ",
             "show_first_text": true,
             "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ РЕЧІ",
@@ -123,8 +124,7 @@
         "first_block_Xpgmm9",
         "first_block_qcwNnP"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "image_banner_caWmx4": {
       "type": "image-banner",
@@ -159,7 +159,7 @@
     "featured_collection_reMEp7": {
       "type": "featured-collection",
       "settings": {
-        "collection2": "футболки-oversizes",
+        "collection2": "new-drop",
         "title": "",
         "heading_size": "h2",
         "description": "",
@@ -213,18 +213,15 @@
       "blocks": {
         "tiktok_video_tRnK6y": {
           "type": "tiktok_video",
-          "settings": {
-          }
+          "settings": {}
         },
         "instagram_video_WRcMDp": {
           "type": "instagram_video",
-          "settings": {
-          }
+          "settings": {}
         },
         "tg_DRQ4gf": {
           "type": "tg",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -232,8 +229,7 @@
         "instagram_video_WRcMDp",
         "tg_DRQ4gf"
       ],
-      "settings": {
-      }
+      "settings": {}
     }
   },
   "order": [

@@ -1,20 +1,18 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "disabled": true,
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -28,7 +26,7 @@
           "settings": {
             "heading_type": "h2",
             "heading_text": "ДОСТАВКА ПО УКРАЇНІ",
-            "paragraph_text": "Доставка товарів по Україні здійснюється компанією «Нова Пошта».\nВідправлення здійснюються протягом 1-5 робочих днів  після отримання магазином оплати, відправки 7 днів в неділю.\nВартість доставки оплачує отримувач, згідно тарифів компанії перевізника.\nРозрахувати середню вартість доставки компанією “Нова Пошта”: novaposhta.ua.\n<br><br>\nПісля відправлення замовлення, ви отримаєте номер ТТН (товарно-транспортної накладної), по якій ви зможете відстежити посилку у додатку нової пошти."
+            "paragraph_text": "Доставка товарів по Україні здійснюється компанією «Нова Пошта».\nВідправлення зазвичай здійснюються протягом 1-7 робочих днів після отримання магазином оплати, але бувають форсмажори та затримки, через нестабільну ситуацію в нашій країні.\nВартість доставки оплачує отримувач, згідно тарифів компанії перевізника.\nРозрахувати середню вартість доставки компанією “Нова Пошта”: novaposhta.ua.\n<br><br>\nПісля відправлення замовлення, ви отримаєте номер ТТН (товарно-транспортної накладної), по якій ви зможете відстежити посилку у додатку нової пошти."
           }
         },
         "content_block_JC76jt": {
@@ -44,8 +42,8 @@
         "content_block_XBUUa8",
         "content_block_JC76jt"
       ],
-      "settings": {
-      }
+      "custom_css": [],
+      "settings": {}
     }
   },
   "order": [

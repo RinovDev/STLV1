@@ -1,16 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/88b9ad7aeb54ee88c1c922d86e1717dc_5c740bce-a5ba-430e-857d-3118f42ae122.png",
+    "logo": "shopify://shop_images/88b9ad7aeb54ee88c1c922d86e1717dc_5c740bce-a5ba-430e-857d-3118f42ae122.png",
     "logo_width": 80,
+    "favicon": "shopify://shop_images/1_479d3fce-cfda-4690-b412-82d4e0fe2b26.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -105,11 +106,11 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-5",
     "sold_out_badge_color_scheme": "scheme-3",
-    "brand_image": "shopify:\/\/shop_images\/88b9ad7aeb54ee88c1c922d86e1717dc_5c740bce-a5ba-430e-857d-3118f42ae122.png",
+    "brand_image": "shopify://shop_images/88b9ad7aeb54ee88c1c922d86e1717dc_5c740bce-a5ba-430e-857d-3118f42ae122.png",
     "social_facebook_link": "",
-    "social_instagram_link": "https:\/\/www.instagram.com\/stlv.club\/",
+    "social_instagram_link": "https://www.instagram.com/stlv.club/",
     "social_youtube_link": "",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@stilove.ua",
+    "social_tiktok_link": "https://www.tiktok.com/@stilove.ua",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -138,9 +139,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {

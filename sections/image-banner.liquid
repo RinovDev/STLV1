@@ -29,20 +29,11 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 
-  
-
-  
-
-  .custom_h2{
-    font-family: aAbsoluteEmpire;
-    font-size: 6rem;
-    color:#ffd837;
-  }
-
   .custom2_h2{
     font-family:Warsuck;
     color:white;
     font-size:3.6rem;
+    color: {{block.settings.color_text}}
  
   }
 
@@ -79,7 +70,6 @@
   .custom_h2{
     font-family: aAbsoluteEmpire;
     font-size: 2.5em;
-    color:#ffd837;
   }
 
   .custom_p{
@@ -473,6 +463,12 @@
           "id": "heading",
           "default": "t:sections.image-banner.blocks.heading.settings.heading.default",
           "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        },
+        {
+         "type": "color",
+         "id": "color_text",
+         "label": "Body text",
+         "default": "#000000"
         },
         {
           "type": "select",
