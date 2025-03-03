@@ -177,7 +177,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 style = "color :  {{block.settings.color_text}}; {% if block.settings.our_custom_fonts2 %} font-family : Warsuck {% endif %}"
+            <h2 style = "color :  {{block.settings.color_text}}; {% if section.settings.our_custom_fonts2 %} font-family : Warsuck {% endif %}"
               class="banner__heading inline-richtext {{ block.settings.heading_size }} 
               {% if section.settings.our_custom_fonts %}
               custom_h2
