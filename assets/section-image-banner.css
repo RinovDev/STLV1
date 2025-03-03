@@ -1,5 +1,4 @@
 .banner {
-  
   display: flex;
   position: relative;
   flex-direction: column;
@@ -33,12 +32,6 @@
 
   .banner--content-align-left .banner__box {
     text-align: left;
-  }
-
-  .banner--content-align-left.banner--desktop-transparent .banner__box,
-  .banner--content-align-right.banner--desktop-transparent .banner__box,
-  .banner--medium.banner--desktop-transparent .banner__box {
-    max-width: 68rem;
   }
 }
 
@@ -268,7 +261,6 @@
 }
 
 .banner__content {
-
   padding: 0;
   display: flex;
   position: relative;
@@ -280,7 +272,6 @@
 
 @media screen and (min-width: 750px) {
   .banner__content {
-   
   }
 
   .banner__content--top-left {
@@ -476,7 +467,6 @@
 
 .banner__box > * + .banner__buttons {
   margin-top: 10rem;
-  
 }
 
 @media screen and (max-width: 749px) {

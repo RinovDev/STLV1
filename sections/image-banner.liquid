@@ -30,7 +30,7 @@
   }
 
   .custom2_h2{
-    font-family:Warsuck;
+    font-family:Unbounded;
     font-size:3.6rem;
  
   }
@@ -177,14 +177,12 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 style = "color :  {{block.settings.color_text}} "
+            <h2 style = "color :  {{block.settings.color_text}}; {% if block.settings.our_custom_fonts2 %} font-family : Warsuck {% endif %}"
               class="banner__heading inline-richtext {{ block.settings.heading_size }} 
               {% if section.settings.our_custom_fonts %}
               custom_h2
               {% endif %}
-              {% if section.settings.our_custom_fonts2 %}
-              custom2_h2
-              {% endif %}"
+              custom2_h2"
               
               {{ block.shopify_attributes }}
             >

@@ -15,7 +15,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "NIGHT IS NOT ONLY FOR LOVE",
+            "heading": "НІЧ СТВОРЕНА НЕ ТІЛЬКИ ДЛЯ КОХАННЯ",
+            "color_text": "#ffd230",
             "heading_size": "hxl"
           }
         },
@@ -23,6 +24,7 @@
           "type": "text",
           "settings": {
             "paragraph_text": "Колаборація STLV CLUB з 20 полком К-2 <br>\nта українською компанією SkyFall виробником гексакоптерів \"Vampire\" <br>\nПрибуток з цього принта піде хлопцям на закупівлю скидів для дронів.",
+            "p_text": "#ffffff",
             "text": "",
             "text_style": "body"
           }
@@ -133,6 +135,7 @@
           "type": "heading",
           "settings": {
             "heading": "ONLY THE DEAD HAVE SEEN THE END OF WAR",
+            "color_text": "#ffffff",
             "heading_size": "h1"
           }
         }
