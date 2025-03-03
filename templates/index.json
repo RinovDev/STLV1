@@ -16,6 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "NIGHT IS NOT ONLY FOR LOVE",
+            "color_text": "#c83636",
             "heading_size": "hxl"
           }
         },
@@ -31,7 +32,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "ПРИДБАТИ",
-            "button_link_1": "shopify:\/\/collections\/night-is-not-only-for-love",
+            "button_link_1": "shopify://collections/night-is-not-only-for-love",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -48,7 +49,7 @@
       "settings": {
         "our_custom_fonts2": true,
         "our_custom_fonts": true,
-        "image": "shopify:\/\/shop_images\/2_1255297b-7dde-4766-8b9d-af5211473472.jpg",
+        "image": "shopify://shop_images/2_1255297b-7dde-4766-8b9d-af5211473472.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -98,25 +99,25 @@
         "first_block_Xpgmm9": {
           "type": "first_block",
           "settings": {
-            "first_image": "shopify:\/\/shop_images\/2_d957ebcd-9109-4fc2-8f54-01684daad242.jpg",
+            "first_image": "shopify://shop_images/2_d957ebcd-9109-4fc2-8f54-01684daad242.jpg",
             "first_text": "ПРИНТИ",
             "show_first_text": true,
             "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ ПРІНТИ",
             "show_first_button": true,
             "first_paragraph_text": "",
-            "first_button_url": "https:\/\/stlvclub.com\/pages\/прінти"
+            "first_button_url": "https://stlvclub.com/pages/прінти"
           }
         },
         "first_block_qcwNnP": {
           "type": "first_block",
           "settings": {
-            "first_image": "shopify:\/\/shop_images\/d97ce189598b80d078a4def0ef9be7c9_0dec6be1-74bc-45a6-8315-e4c3178470d0.jpg",
+            "first_image": "shopify://shop_images/d97ce189598b80d078a4def0ef9be7c9_0dec6be1-74bc-45a6-8315-e4c3178470d0.jpg",
             "first_text": "РЕЧІ",
             "show_first_text": true,
             "first_button_text": "ПЕРЕГЛЯНУТИ ВСІ РЕЧІ",
             "show_first_button": true,
             "first_paragraph_text": "",
-            "first_button_url": "https:\/\/stlvclub.com\/pages\/каталог"
+            "first_button_url": "https://stlvclub.com/pages/каталог"
           }
         }
       },
@@ -133,6 +134,7 @@
           "type": "heading",
           "settings": {
             "heading": "ONLY THE DEAD HAVE SEEN THE END OF WAR",
+            "color_text": "#000000",
             "heading_size": "h1"
           }
         }
@@ -143,7 +145,7 @@
       "settings": {
         "our_custom_fonts2": true,
         "our_custom_fonts": false,
-        "image": "shopify:\/\/shop_images\/2.jpg",
+        "image": "shopify://shop_images/2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
