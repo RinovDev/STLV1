@@ -32,7 +32,6 @@
   .custom2_h2{
     font-family:Warsuck;
     font-size:3.6rem;
-    color: {{block.settings.color_text}}
  
   }
 
@@ -180,7 +179,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2
+            <h2 style = "color :  {{block.settings.color_text}} "
               class="banner__heading inline-richtext {{ block.settings.heading_size }} 
               {% if section.settings.our_custom_fonts %}
               custom_h2
@@ -195,7 +194,7 @@
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-              <p class ="
+              <p style = "color : {{block.settings.color_text}}; class ="
                 {% if section.settings.our_custom_fonts %}
                    custom_p
                 {% endif %}"
